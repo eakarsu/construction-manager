@@ -1,0 +1,31 @@
+{
+  "id": "construction-manager",
+  "title": "Construction Manager App",
+  "industry": "Construction & Built Environment",
+  "industryId": "construction-built-environment",
+  "specialization": "Construction Manager",
+  "sourcePlatformGroup": "construction-trades-platform",
+  "sources": [
+    "AIConstructionBidAnalyzer",
+    "AIConstructionManager",
+    "AIHomeRenovationProjectManager",
+    "AISmartBuildingManager",
+    "ai-data-center-construction-coordinator"
+  ],
+  "featureCount": 284,
+  "candidateFeatureCount": 365,
+  "eliminatedSimilarFeatures": 81,
+  "evidenceCount": 673,
+  "aiPageCount": 0,
+  "sourceAIPageCount": 0,
+  "featureEvidencePolicy": "Existing source routes, pages, APIs, models, schemas, and navigation only",
+  "optimizationPolicy": "Equivalent feature names are consolidated once per industry and assigned to one canonical app owner",
+  "database": "database.sqlite",
+  "databaseSeed": {
+    "seededProjects": 1,
+    "seededTables": 27,
+    "seededRows": 405
+  },
+  "visibleFeatureCount": 19,
+  "featureVisibilityMode": "seeded-or-ai"
+}
