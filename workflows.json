@@ -1,0 +1,831 @@
+{
+  "version": 1,
+  "appId": "construction-manager",
+  "resources": [
+    {
+      "name": "plan_uploads",
+      "type": "table",
+      "workflowId": "plan-spec-upload"
+    },
+    {
+      "name": "spec_documents",
+      "type": "table",
+      "workflowId": "plan-spec-upload"
+    },
+    {
+      "name": "document_extractions",
+      "type": "table",
+      "workflowId": "plan-spec-upload"
+    },
+    {
+      "name": "bid_risk_reviews",
+      "type": "table",
+      "workflowId": "bid-risk-analysis"
+    },
+    {
+      "name": "bid_risk_findings",
+      "type": "table",
+      "workflowId": "bid-risk-analysis"
+    },
+    {
+      "name": "estimate_reviews",
+      "type": "table",
+      "workflowId": "cost-estimate-review"
+    },
+    {
+      "name": "estimate_variances",
+      "type": "table",
+      "workflowId": "cost-estimate-review"
+    },
+    {
+      "name": "permit_checklists",
+      "type": "table",
+      "workflowId": "permit-checklist"
+    },
+    {
+      "name": "permit_requirements",
+      "type": "table",
+      "workflowId": "permit-checklist"
+    },
+    {
+      "name": "permit_status_events",
+      "type": "table",
+      "workflowId": "permit-checklist"
+    },
+    {
+      "name": "safety_plans",
+      "type": "table",
+      "workflowId": "safety-plan-generator"
+    },
+    {
+      "name": "safety_hazards",
+      "type": "table",
+      "workflowId": "safety-plan-generator"
+    },
+    {
+      "name": "safety_inspections",
+      "type": "table",
+      "workflowId": "safety-plan-generator"
+    },
+    {
+      "name": "subcontractor_scores",
+      "type": "table",
+      "workflowId": "subcontractor-comparison"
+    },
+    {
+      "name": "subcontractor_evaluations",
+      "type": "table",
+      "workflowId": "subcontractor-comparison"
+    },
+    {
+      "name": "change_order_impacts",
+      "type": "table",
+      "workflowId": "change-order-tracker"
+    },
+    {
+      "name": "change_order_approvals",
+      "type": "table",
+      "workflowId": "change-order-tracker"
+    },
+    {
+      "name": "project_risk_metrics",
+      "type": "view",
+      "workflowId": "project-risk-dashboard"
+    },
+    {
+      "name": "bid_readiness_metrics",
+      "type": "view",
+      "workflowId": "project-risk-dashboard"
+    }
+  ],
+  "workflows": [
+    {
+      "id": "plan-spec-upload",
+      "title": "Plan and Specification Intake",
+      "description": "Register locally uploaded plans and specifications, verify extraction quality, and release a controlled document set.",
+      "fields": [
+        {
+          "key": "projectReference",
+          "label": "Project reference",
+          "type": "text",
+          "required": true,
+          "default": "PROJECT-DEMO-101"
+        },
+        {
+          "key": "documentName",
+          "label": "Document name",
+          "type": "text",
+          "required": true,
+          "default": "Issued-for-bid architectural set"
+        },
+        {
+          "key": "documentType",
+          "label": "Document type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Plans",
+            "Specifications",
+            "Addendum",
+            "Schedule"
+          ],
+          "default": "Plans"
+        },
+        {
+          "key": "revision",
+          "label": "Revision",
+          "type": "text",
+          "required": true,
+          "default": "IFB-01"
+        },
+        {
+          "key": "source",
+          "label": "Source",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Local upload",
+            "Manual entry",
+            "Sandbox connector"
+          ],
+          "default": "Local upload"
+        }
+      ],
+      "states": [
+        "uploaded",
+        "extracting",
+        "quality_review",
+        "released"
+      ],
+      "transitions": [
+        {
+          "id": "plan-spec-upload-extracting",
+          "label": "Move to extracting",
+          "from": [
+            "uploaded"
+          ],
+          "to": "extracting"
+        },
+        {
+          "id": "plan-spec-upload-quality_review",
+          "label": "Move to quality review",
+          "from": [
+            "extracting"
+          ],
+          "to": "quality_review"
+        },
+        {
+          "id": "plan-spec-upload-released",
+          "label": "Move to released",
+          "from": [
+            "quality_review"
+          ],
+          "to": "released"
+        }
+      ],
+      "seeds": [
+        {
+          "id": "plan-spec-upload-demo",
+          "state": "uploaded",
+          "projectReference": "PROJECT-DEMO-101",
+          "documentName": "Issued-for-bid architectural set",
+          "documentType": "Plans",
+          "revision": "IFB-01",
+          "source": "Local upload"
+        }
+      ]
+    },
+    {
+      "id": "bid-risk-analysis",
+      "title": "Bid Risk Analysis",
+      "description": "Identify scope, contract, schedule, and constructability risks and route material findings for bid leadership review.",
+      "fields": [
+        {
+          "key": "projectReference",
+          "label": "Project reference",
+          "type": "text",
+          "required": true,
+          "default": "PROJECT-DEMO-101"
+        },
+        {
+          "key": "riskCategory",
+          "label": "Risk category",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Scope gap",
+            "Contract term",
+            "Schedule",
+            "Constructability",
+            "Site condition"
+          ],
+          "default": "Scope gap"
+        },
+        {
+          "key": "finding",
+          "label": "Finding",
+          "type": "textarea",
+          "required": true,
+          "default": "Temporary power responsibility is not assigned in the bid documents."
+        },
+        {
+          "key": "severity",
+          "label": "Severity",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Low",
+            "Medium",
+            "High",
+            "Critical"
+          ],
+          "default": "High"
+        },
+        {
+          "key": "owner",
+          "label": "Finding owner",
+          "type": "text",
+          "required": true,
+          "default": "Demo Chief Estimator"
+        }
+      ],
+      "states": [
+        "queued",
+        "analyzed",
+        "estimator_review",
+        "resolved"
+      ],
+      "transitions": [
+        {
+          "id": "bid-risk-analysis-analyzed",
+          "label": "Move to analyzed",
+          "from": [
+            "queued"
+          ],
+          "to": "analyzed"
+        },
+        {
+          "id": "bid-risk-analysis-estimator_review",
+          "label": "Move to estimator review",
+          "from": [
+            "analyzed"
+          ],
+          "to": "estimator_review"
+        },
+        {
+          "id": "bid-risk-analysis-resolved",
+          "label": "Move to resolved",
+          "from": [
+            "estimator_review"
+          ],
+          "to": "resolved"
+        }
+      ],
+      "seeds": [
+        {
+          "id": "bid-risk-analysis-demo",
+          "state": "queued",
+          "projectReference": "PROJECT-DEMO-101",
+          "riskCategory": "Scope gap",
+          "finding": "Temporary power responsibility is not assigned in the bid documents.",
+          "severity": "High",
+          "owner": "Demo Chief Estimator"
+        }
+      ]
+    },
+    {
+      "id": "cost-estimate-review",
+      "title": "Cost Estimate Review",
+      "description": "Compare estimate assumptions with plan quantities and benchmarks, then approve or return material variances.",
+      "fields": [
+        {
+          "key": "estimateReference",
+          "label": "Estimate reference",
+          "type": "text",
+          "required": true,
+          "default": "EST-DEMO-101-A"
+        },
+        {
+          "key": "baselineCost",
+          "label": "Baseline cost",
+          "type": "number",
+          "required": true,
+          "default": 12850000
+        },
+        {
+          "key": "reviewedCost",
+          "label": "Reviewed cost",
+          "type": "number",
+          "required": true,
+          "default": 13240000
+        },
+        {
+          "key": "varianceReason",
+          "label": "Variance reason",
+          "type": "textarea",
+          "required": true,
+          "default": "Structural steel escalation and revised crane duration."
+        },
+        {
+          "key": "contingencyPercent",
+          "label": "Contingency percent",
+          "type": "number",
+          "required": true,
+          "default": 7.5
+        }
+      ],
+      "states": [
+        "prepared",
+        "variance_review",
+        "approved",
+        "locked"
+      ],
+      "transitions": [
+        {
+          "id": "cost-estimate-review-variance_review",
+          "label": "Move to variance review",
+          "from": [
+            "prepared"
+          ],
+          "to": "variance_review"
+        },
+        {
+          "id": "cost-estimate-review-approved",
+          "label": "Move to approved",
+          "from": [
+            "variance_review"
+          ],
+          "to": "approved"
+        },
+        {
+          "id": "cost-estimate-review-locked",
+          "label": "Move to locked",
+          "from": [
+            "approved"
+          ],
+          "to": "locked"
+        }
+      ],
+      "seeds": [
+        {
+          "id": "cost-estimate-review-demo",
+          "state": "prepared",
+          "estimateReference": "EST-DEMO-101-A",
+          "baselineCost": 12850000,
+          "reviewedCost": 13240000,
+          "varianceReason": "Structural steel escalation and revised crane duration.",
+          "contingencyPercent": 7.5
+        }
+      ]
+    },
+    {
+      "id": "permit-checklist",
+      "title": "Permit Checklist",
+      "description": "Track jurisdictional permit requirements, evidence, status events, and blocking conditions through approval.",
+      "fields": [
+        {
+          "key": "projectReference",
+          "label": "Project reference",
+          "type": "text",
+          "required": true,
+          "default": "PROJECT-DEMO-101"
+        },
+        {
+          "key": "jurisdiction",
+          "label": "Jurisdiction",
+          "type": "text",
+          "required": true,
+          "default": "Demo City Building Department"
+        },
+        {
+          "key": "permitType",
+          "label": "Permit type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Building",
+            "Electrical",
+            "Mechanical",
+            "Plumbing",
+            "Environmental"
+          ],
+          "default": "Building"
+        },
+        {
+          "key": "requiredEvidence",
+          "label": "Required evidence",
+          "type": "textarea",
+          "required": true,
+          "default": "Sealed drawings; energy statement; contractor registration"
+        },
+        {
+          "key": "agencyStatus",
+          "label": "Agency connection status",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Not configured",
+            "Needs credentials",
+            "Test ready",
+            "Blocked"
+          ],
+          "default": "Not configured"
+        }
+      ],
+      "states": [
+        "draft",
+        "requirements_review",
+        "submitted",
+        "approved"
+      ],
+      "transitions": [
+        {
+          "id": "permit-checklist-requirements_review",
+          "label": "Move to requirements review",
+          "from": [
+            "draft"
+          ],
+          "to": "requirements_review"
+        },
+        {
+          "id": "permit-checklist-submitted",
+          "label": "Move to submitted",
+          "from": [
+            "requirements_review"
+          ],
+          "to": "submitted"
+        },
+        {
+          "id": "permit-checklist-approved",
+          "label": "Move to approved",
+          "from": [
+            "submitted"
+          ],
+          "to": "approved"
+        }
+      ],
+      "seeds": [
+        {
+          "id": "permit-checklist-demo",
+          "state": "draft",
+          "projectReference": "PROJECT-DEMO-101",
+          "jurisdiction": "Demo City Building Department",
+          "permitType": "Building",
+          "requiredEvidence": "Sealed drawings; energy statement; contractor registration",
+          "agencyStatus": "Not configured"
+        }
+      ]
+    },
+    {
+      "id": "safety-plan-generator",
+      "title": "Safety Plan Generator",
+      "description": "Build a site-specific safety plan from hazards, controls, inspection cadence, and accountable roles.",
+      "fields": [
+        {
+          "key": "projectReference",
+          "label": "Project reference",
+          "type": "text",
+          "required": true,
+          "default": "PROJECT-DEMO-101"
+        },
+        {
+          "key": "workPhase",
+          "label": "Work phase",
+          "type": "text",
+          "required": true,
+          "default": "Structural steel erection"
+        },
+        {
+          "key": "hazards",
+          "label": "Primary hazards",
+          "type": "textarea",
+          "required": true,
+          "default": "Falls; suspended loads; hot work; mobile equipment"
+        },
+        {
+          "key": "controls",
+          "label": "Required controls",
+          "type": "textarea",
+          "required": true,
+          "default": "Engineered fall protection; lift plans; exclusion zones; fire watch"
+        },
+        {
+          "key": "safetyLead",
+          "label": "Safety lead",
+          "type": "text",
+          "required": true,
+          "default": "Demo Site Safety Lead"
+        }
+      ],
+      "states": [
+        "draft",
+        "safety_review",
+        "approved",
+        "active"
+      ],
+      "transitions": [
+        {
+          "id": "safety-plan-generator-safety_review",
+          "label": "Move to safety review",
+          "from": [
+            "draft"
+          ],
+          "to": "safety_review"
+        },
+        {
+          "id": "safety-plan-generator-approved",
+          "label": "Move to approved",
+          "from": [
+            "safety_review"
+          ],
+          "to": "approved"
+        },
+        {
+          "id": "safety-plan-generator-active",
+          "label": "Move to active",
+          "from": [
+            "approved"
+          ],
+          "to": "active"
+        }
+      ],
+      "seeds": [
+        {
+          "id": "safety-plan-generator-demo",
+          "state": "draft",
+          "projectReference": "PROJECT-DEMO-101",
+          "workPhase": "Structural steel erection",
+          "hazards": "Falls; suspended loads; hot work; mobile equipment",
+          "controls": "Engineered fall protection; lift plans; exclusion zones; fire watch",
+          "safetyLead": "Demo Site Safety Lead"
+        }
+      ]
+    },
+    {
+      "id": "subcontractor-comparison",
+      "title": "Subcontractor Comparison",
+      "description": "Score subcontractors on scope, price, capacity, safety, quality, and commercial exceptions before award.",
+      "fields": [
+        {
+          "key": "tradePackage",
+          "label": "Trade package",
+          "type": "text",
+          "required": true,
+          "default": "Division 05 structural steel"
+        },
+        {
+          "key": "subcontractor",
+          "label": "Subcontractor",
+          "type": "text",
+          "required": true,
+          "default": "Demo Steel Partners"
+        },
+        {
+          "key": "bidAmount",
+          "label": "Bid amount",
+          "type": "number",
+          "required": true,
+          "default": 2180000
+        },
+        {
+          "key": "safetyScore",
+          "label": "Safety score",
+          "type": "number",
+          "required": true,
+          "default": 88
+        },
+        {
+          "key": "commercialExceptions",
+          "label": "Commercial exceptions",
+          "type": "textarea",
+          "required": true,
+          "default": "Excludes winter conditions and weekend crane premiums."
+        }
+      ],
+      "states": [
+        "invited",
+        "evaluated",
+        "committee_review",
+        "selected"
+      ],
+      "transitions": [
+        {
+          "id": "subcontractor-comparison-evaluated",
+          "label": "Move to evaluated",
+          "from": [
+            "invited"
+          ],
+          "to": "evaluated"
+        },
+        {
+          "id": "subcontractor-comparison-committee_review",
+          "label": "Move to committee review",
+          "from": [
+            "evaluated"
+          ],
+          "to": "committee_review"
+        },
+        {
+          "id": "subcontractor-comparison-selected",
+          "label": "Move to selected",
+          "from": [
+            "committee_review"
+          ],
+          "to": "selected"
+        }
+      ],
+      "seeds": [
+        {
+          "id": "subcontractor-comparison-demo",
+          "state": "invited",
+          "tradePackage": "Division 05 structural steel",
+          "subcontractor": "Demo Steel Partners",
+          "bidAmount": 2180000,
+          "safetyScore": 88,
+          "commercialExceptions": "Excludes winter conditions and weekend crane premiums."
+        }
+      ]
+    },
+    {
+      "id": "change-order-tracker",
+      "title": "Change Order Tracker",
+      "description": "Document scope and cost impact, collect internal approvals, and track external submission readiness.",
+      "fields": [
+        {
+          "key": "changeReference",
+          "label": "Change reference",
+          "type": "text",
+          "required": true,
+          "default": "CO-DEMO-014"
+        },
+        {
+          "key": "scope",
+          "label": "Change scope",
+          "type": "textarea",
+          "required": true,
+          "default": "Relocate two rooftop units due to revised structural framing."
+        },
+        {
+          "key": "costImpact",
+          "label": "Cost impact",
+          "type": "number",
+          "required": true,
+          "default": 74000
+        },
+        {
+          "key": "scheduleImpactDays",
+          "label": "Schedule impact days",
+          "type": "number",
+          "required": true,
+          "default": 4
+        },
+        {
+          "key": "externalStatus",
+          "label": "Owner-system status",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Not configured",
+            "Needs credentials",
+            "Test ready",
+            "Blocked"
+          ],
+          "default": "Not configured"
+        }
+      ],
+      "states": [
+        "identified",
+        "priced",
+        "internal_review",
+        "approved"
+      ],
+      "transitions": [
+        {
+          "id": "change-order-tracker-priced",
+          "label": "Move to priced",
+          "from": [
+            "identified"
+          ],
+          "to": "priced"
+        },
+        {
+          "id": "change-order-tracker-internal_review",
+          "label": "Move to internal review",
+          "from": [
+            "priced"
+          ],
+          "to": "internal_review"
+        },
+        {
+          "id": "change-order-tracker-approved",
+          "label": "Move to approved",
+          "from": [
+            "internal_review"
+          ],
+          "to": "approved"
+        }
+      ],
+      "seeds": [
+        {
+          "id": "change-order-tracker-demo",
+          "state": "identified",
+          "changeReference": "CO-DEMO-014",
+          "scope": "Relocate two rooftop units due to revised structural framing.",
+          "costImpact": 74000,
+          "scheduleImpactDays": 4,
+          "externalStatus": "Not configured"
+        }
+      ]
+    },
+    {
+      "id": "project-risk-dashboard",
+      "title": "Project Risk Dashboard",
+      "description": "Aggregate bid readiness, active risks, permits, safety, cost, and change exposure into a reviewed project snapshot.",
+      "fields": [
+        {
+          "key": "projectReference",
+          "label": "Project reference",
+          "type": "text",
+          "required": true,
+          "default": "PROJECT-DEMO-101"
+        },
+        {
+          "key": "reportingDate",
+          "label": "Reporting date",
+          "type": "date",
+          "required": true,
+          "default": "2026-07-13"
+        },
+        {
+          "key": "overallRisk",
+          "label": "Overall risk",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Green",
+            "Amber",
+            "Red"
+          ],
+          "default": "Amber"
+        },
+        {
+          "key": "bidReadinessPercent",
+          "label": "Bid readiness percent",
+          "type": "number",
+          "required": true,
+          "default": 82
+        },
+        {
+          "key": "topRisk",
+          "label": "Top risk",
+          "type": "textarea",
+          "required": true,
+          "default": "Unresolved temporary-power scope and structural steel escalation."
+        }
+      ],
+      "states": [
+        "calculating",
+        "project_review",
+        "published",
+        "archived"
+      ],
+      "transitions": [
+        {
+          "id": "project-risk-dashboard-project_review",
+          "label": "Move to project review",
+          "from": [
+            "calculating"
+          ],
+          "to": "project_review"
+        },
+        {
+          "id": "project-risk-dashboard-published",
+          "label": "Move to published",
+          "from": [
+            "project_review"
+          ],
+          "to": "published"
+        },
+        {
+          "id": "project-risk-dashboard-archived",
+          "label": "Move to archived",
+          "from": [
+            "published"
+          ],
+          "to": "archived"
+        }
+      ],
+      "seeds": [
+        {
+          "id": "project-risk-dashboard-demo",
+          "state": "calculating",
+          "projectReference": "PROJECT-DEMO-101",
+          "reportingDate": "2026-07-13",
+          "overallRisk": "Amber",
+          "bidReadinessPercent": 82,
+          "topRisk": "Unresolved temporary-power scope and structural steel escalation."
+        }
+      ]
+    }
+  ]
+}
