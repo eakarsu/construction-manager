@@ -12,10 +12,10 @@
     "AISmartBuildingManager",
     "ai-data-center-construction-coordinator"
   ],
-  "featureCount": 284,
-  "candidateFeatureCount": 365,
-  "eliminatedSimilarFeatures": 81,
-  "evidenceCount": 673,
+  "featureCount": 271,
+  "candidateFeatureCount": 360,
+  "eliminatedSimilarFeatures": 89,
+  "evidenceCount": 663,
   "aiPageCount": 0,
   "sourceAIPageCount": 0,
   "featureEvidencePolicy": "Existing source routes, pages, APIs, models, schemas, and navigation only",
@@ -26,6 +26,6 @@
     "seededTables": 27,
     "seededRows": 405
   },
-  "visibleFeatureCount": 19,
+  "visibleFeatureCount": 18,
   "featureVisibilityMode": "seeded-or-ai"
 }

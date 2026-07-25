@@ -1,5 +1,214 @@
 [
   {
+    "name": "Acknowledge",
+    "canonicalKey": "acknowledge",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/:id/acknowledge"
+    ],
+    "sourceProjects": [
+      "AISmartBuildingManager"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/construction-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AISmartBuildingManager",
+        "path": "backend/routes/alerts.js:81",
+        "route": "/:id/acknowledge",
+        "originApp": "construction-built-environment/construction-manager"
+      }
+    ]
+  },
+  {
+    "name": "Activity",
+    "canonicalKey": "activity",
+    "aliases": [
+      "Activity Page"
+    ],
+    "kinds": [
+      "api",
+      "navigation",
+      "page"
+    ],
+    "routes": [
+      "/ActivityPage",
+      "/activity",
+      "/api/activity"
+    ],
+    "sourceProjects": [
+      "AIArchitecturalDesignGenerator",
+      "AISmartBuildingManager"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/construction-manager",
+      "construction-built-environment/landscaping-design-estimator"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AISmartBuildingManager",
+        "path": "frontend/src/components/Navbar.jsx:35",
+        "route": "",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AISmartBuildingManager",
+        "path": "frontend/src/App.jsx:115",
+        "route": "/activity",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AISmartBuildingManager",
+        "path": "frontend/src/components/Navbar.jsx:35",
+        "route": "/activity",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AISmartBuildingManager",
+        "path": "frontend/src/pages/ActivityPage.jsx",
+        "route": "/ActivityPage",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIArchitecturalDesignGenerator",
+        "path": "backend/src/server.js:362",
+        "route": "/api/activity",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      }
+    ]
+  },
+  {
+    "name": "Advanced AI",
+    "canonicalKey": "advanced ai",
+    "aliases": [
+      "Advanced AI Tools"
+    ],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/AdvancedAITools",
+      "/advanced-ai"
+    ],
+    "sourceProjects": [
+      "AIHomeRenovationProjectManager"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/construction-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "client/src/App.js:101",
+        "route": "/advanced-ai",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "client/src/components/Layout.js:25",
+        "route": "/advanced-ai",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "client/src/pages/AdvancedAITools.js",
+        "route": "/AdvancedAITools",
+        "originApp": "construction-built-environment/construction-manager"
+      }
+    ]
+  },
+  {
+    "name": "Advise",
+    "canonicalKey": "advise",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/advise"
+    ],
+    "sourceProjects": [
+      "AIHomeRenovationProjectManager"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/construction-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "server/routes/changeOrderAdvisor.js:16",
+        "route": "/advise",
+        "originApp": "construction-built-environment/construction-manager"
+      }
+    ]
+  },
+  {
+    "name": "Agentic Contract Negotiation",
+    "canonicalKey": "agentic contract negotiation",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/cf/agentic-contract-negotiation"
+    ],
+    "sourceProjects": [
+      "AIConstructionBidAnalyzer"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/construction-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIConstructionBidAnalyzer",
+        "path": "client/src/App.js:139",
+        "route": "/cf/agentic-contract-negotiation",
+        "originApp": "construction-built-environment/construction-manager"
+      }
+    ]
+  },
+  {
+    "name": "Agentic Negotiation",
+    "canonicalKey": "agentic negotiation",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/agentic-negotiation"
+    ],
+    "sourceProjects": [
+      "AIConstructionBidAnalyzer"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/construction-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIConstructionBidAnalyzer",
+        "path": "server/routes/agenticNegotiation.js:58",
+        "route": "/agentic-negotiation",
+        "originApp": "construction-built-environment/construction-manager"
+      }
+    ]
+  },
+  {
     "name": "AI Analyze",
     "canonicalKey": "ai analyze",
     "aliases": [],
@@ -232,7 +441,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:118",
+        "path": "client/src/App.js:110",
         "route": "/ai-lab",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -302,7 +511,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:137",
+        "path": "client/src/App.js:129",
         "route": "/ai-workbench",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -318,215 +527,6 @@
         "sourceProject": "AIConstructionBidAnalyzer",
         "path": "client/src/pages/AIWorkbenchPage.js",
         "route": "/AIWorkbenchPage",
-        "originApp": "construction-built-environment/construction-manager"
-      }
-    ]
-  },
-  {
-    "name": "Acknowledge",
-    "canonicalKey": "acknowledge",
-    "aliases": [],
-    "kinds": [
-      "api"
-    ],
-    "routes": [
-      "/:id/acknowledge"
-    ],
-    "sourceProjects": [
-      "AISmartBuildingManager"
-    ],
-    "consolidatedFromApps": [
-      "construction-built-environment/construction-manager"
-    ],
-    "evidence": [
-      {
-        "kind": "api",
-        "sourceProject": "AISmartBuildingManager",
-        "path": "backend/routes/alerts.js:81",
-        "route": "/:id/acknowledge",
-        "originApp": "construction-built-environment/construction-manager"
-      }
-    ]
-  },
-  {
-    "name": "Activity",
-    "canonicalKey": "activity",
-    "aliases": [
-      "Activity Page"
-    ],
-    "kinds": [
-      "api",
-      "navigation",
-      "page"
-    ],
-    "routes": [
-      "/ActivityPage",
-      "/activity",
-      "/api/activity"
-    ],
-    "sourceProjects": [
-      "AIArchitecturalDesignGenerator",
-      "AISmartBuildingManager"
-    ],
-    "consolidatedFromApps": [
-      "construction-built-environment/construction-manager",
-      "construction-built-environment/landscaping-design-estimator"
-    ],
-    "evidence": [
-      {
-        "kind": "navigation",
-        "sourceProject": "AISmartBuildingManager",
-        "path": "frontend/src/components/Navbar.jsx:35",
-        "route": "",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AISmartBuildingManager",
-        "path": "frontend/src/App.jsx:115",
-        "route": "/activity",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AISmartBuildingManager",
-        "path": "frontend/src/components/Navbar.jsx:35",
-        "route": "/activity",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AISmartBuildingManager",
-        "path": "frontend/src/pages/ActivityPage.jsx",
-        "route": "/ActivityPage",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIArchitecturalDesignGenerator",
-        "path": "backend/src/server.js:360",
-        "route": "/api/activity",
-        "originApp": "construction-built-environment/landscaping-design-estimator"
-      }
-    ]
-  },
-  {
-    "name": "Advanced AI",
-    "canonicalKey": "advanced ai",
-    "aliases": [
-      "Advanced AI Tools"
-    ],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/AdvancedAITools",
-      "/advanced-ai"
-    ],
-    "sourceProjects": [
-      "AIHomeRenovationProjectManager"
-    ],
-    "consolidatedFromApps": [
-      "construction-built-environment/construction-manager"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AIHomeRenovationProjectManager",
-        "path": "client/src/App.js:101",
-        "route": "/advanced-ai",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIHomeRenovationProjectManager",
-        "path": "client/src/components/Layout.js:25",
-        "route": "/advanced-ai",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIHomeRenovationProjectManager",
-        "path": "client/src/pages/AdvancedAITools.js",
-        "route": "/AdvancedAITools",
-        "originApp": "construction-built-environment/construction-manager"
-      }
-    ]
-  },
-  {
-    "name": "Advise",
-    "canonicalKey": "advise",
-    "aliases": [],
-    "kinds": [
-      "api"
-    ],
-    "routes": [
-      "/advise"
-    ],
-    "sourceProjects": [
-      "AIHomeRenovationProjectManager"
-    ],
-    "consolidatedFromApps": [
-      "construction-built-environment/construction-manager"
-    ],
-    "evidence": [
-      {
-        "kind": "api",
-        "sourceProject": "AIHomeRenovationProjectManager",
-        "path": "server/routes/changeOrderAdvisor.js:16",
-        "route": "/advise",
-        "originApp": "construction-built-environment/construction-manager"
-      }
-    ]
-  },
-  {
-    "name": "Agentic Contract Negotiation",
-    "canonicalKey": "agentic contract negotiation",
-    "aliases": [],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/cf/agentic-contract-negotiation"
-    ],
-    "sourceProjects": [
-      "AIConstructionBidAnalyzer"
-    ],
-    "consolidatedFromApps": [
-      "construction-built-environment/construction-manager"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:147",
-        "route": "/cf/agentic-contract-negotiation",
-        "originApp": "construction-built-environment/construction-manager"
-      }
-    ]
-  },
-  {
-    "name": "Agentic Negotiation",
-    "canonicalKey": "agentic negotiation",
-    "aliases": [],
-    "kinds": [
-      "api"
-    ],
-    "routes": [
-      "/agentic-negotiation"
-    ],
-    "sourceProjects": [
-      "AIConstructionBidAnalyzer"
-    ],
-    "consolidatedFromApps": [
-      "construction-built-environment/construction-manager"
-    ],
-    "evidence": [
-      {
-        "kind": "api",
-        "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "server/routes/agenticNegotiation.js:58",
-        "route": "/agentic-negotiation",
         "originApp": "construction-built-environment/construction-manager"
       }
     ]
@@ -714,7 +714,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:122",
+        "path": "client/src/App.js:114",
         "route": "/approvals",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -730,6 +730,32 @@
         "sourceProject": "AIConstructionBidAnalyzer",
         "path": "client/src/pages/Dashboard.js:20",
         "route": "/approvals",
+        "originApp": "construction-built-environment/construction-manager"
+      }
+    ]
+  },
+  {
+    "name": "Approve",
+    "canonicalKey": "approve",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/submissions/:id/approve"
+    ],
+    "sourceProjects": [
+      "AIConstructionBidAnalyzer"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/construction-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIConstructionBidAnalyzer",
+        "path": "server/routes/controlledBids.js:35",
+        "route": "/submissions/:id/approve",
         "originApp": "construction-built-environment/construction-manager"
       }
     ]
@@ -788,7 +814,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:124",
+        "path": "client/src/App.js:116",
         "route": "/audit-trail",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -854,7 +880,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionManager",
-        "path": "frontend/src/App.js:189",
+        "path": "frontend/src/App.js:180",
         "route": "/cf/autonomous-site-monitoring",
         "originApp": "construction-built-environment/construction-manager"
       }
@@ -891,7 +917,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:120",
+        "path": "client/src/App.js:112",
         "route": "/bid-bond-readiness",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -942,7 +968,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:115",
+        "path": "client/src/App.js:107",
         "route": "/bid-comparisons",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -989,7 +1015,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:126",
+        "path": "client/src/App.js:118",
         "route": "/bid-risk-analysis",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -1040,7 +1066,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:105",
+        "path": "client/src/App.js:97",
         "route": "/bids",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -1189,7 +1215,7 @@
       {
         "kind": "api",
         "sourceProject": "AISmartBuildingManager",
-        "path": "backend/routes/ai.js:74",
+        "path": "backend/routes/ai.js:72",
         "route": "/building-health",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -2058,6 +2084,56 @@
     ]
   },
   {
+    "name": "Change Order Impacts",
+    "canonicalKey": "change impact order",
+    "aliases": [
+      "Change Orders Impact"
+    ],
+    "kinds": [
+      "navigation",
+      "page"
+    ],
+    "routes": [
+      "/change-order-impacts"
+    ],
+    "sourceProjects": [
+      "AIConstructionBidAnalyzer"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/construction-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIConstructionBidAnalyzer",
+        "path": "client/src/App.js:123",
+        "route": "/change-order-impacts",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIConstructionBidAnalyzer",
+        "path": "client/src/components/Sidebar.js:32",
+        "route": "/change-order-impacts",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIConstructionBidAnalyzer",
+        "path": "client/src/pages/Dashboard.js:29",
+        "route": "/change-order-impacts",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIConstructionBidAnalyzer",
+        "path": "client/src/components/Sidebar.js:32",
+        "route": "",
+        "originApp": "construction-built-environment/construction-manager"
+      }
+    ]
+  },
+  {
     "name": "Change Orders",
     "canonicalKey": "change order",
     "aliases": [
@@ -2092,7 +2168,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:111",
+        "path": "client/src/App.js:103",
         "route": "/change-orders",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -2163,7 +2239,7 @@
   },
   {
     "name": "Change Orders Full",
-    "canonicalKey": "change full orders",
+    "canonicalKey": "change full order",
     "aliases": [],
     "kinds": [
       "page"
@@ -2181,58 +2257,8 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionManager",
-        "path": "frontend/src/App.js:174",
+        "path": "frontend/src/App.js:165",
         "route": "/change-orders-full",
-        "originApp": "construction-built-environment/construction-manager"
-      }
-    ]
-  },
-  {
-    "name": "Change Orders Impact",
-    "canonicalKey": "change impact order",
-    "aliases": [
-      "Change Order Impacts"
-    ],
-    "kinds": [
-      "navigation",
-      "page"
-    ],
-    "routes": [
-      "/change-order-impacts"
-    ],
-    "sourceProjects": [
-      "AIConstructionBidAnalyzer"
-    ],
-    "consolidatedFromApps": [
-      "construction-built-environment/construction-manager"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:131",
-        "route": "/change-order-impacts",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/components/Sidebar.js:32",
-        "route": "/change-order-impacts",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/pages/Dashboard.js:29",
-        "route": "/change-order-impacts",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "navigation",
-        "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/components/Sidebar.js:32",
-        "route": "",
         "originApp": "construction-built-environment/construction-manager"
       }
     ]
@@ -2479,7 +2505,7 @@
   },
   {
     "name": "Codex Operations Feature",
-    "canonicalKey": "codex operations",
+    "canonicalKey": "codex operation",
     "aliases": [],
     "kinds": [
       "page"
@@ -2627,7 +2653,7 @@
       {
         "kind": "api",
         "sourceProject": "AISmartBuildingManager",
-        "path": "backend/routes/ai.js:245",
+        "path": "backend/routes/ai.js:243",
         "route": "/comfort-optimization",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -2760,7 +2786,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:114",
+        "path": "client/src/App.js:106",
         "route": "/compliance",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -2894,7 +2920,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:106",
+        "path": "client/src/App.js:98",
         "route": "/contractors",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -2950,14 +2976,17 @@
     ]
   },
   {
-    "name": "Contractors Subcontractors Lack AI Scoring Or Performance Pr",
-    "canonicalKey": "ai contractors lack or performance pr scoring subcontractors",
-    "aliases": [],
+    "name": "Cost Estimate Review",
+    "canonicalKey": "cost estimate review",
+    "aliases": [
+      "Costs Estimate Review"
+    ],
     "kinds": [
+      "navigation",
       "page"
     ],
     "routes": [
-      "/gap/contractors-subcontractors-lack-ai-scoring-or-performance-pr"
+      "/cost-estimate-review"
     ],
     "sourceProjects": [
       "AIConstructionBidAnalyzer"
@@ -2969,8 +2998,29 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:152",
-        "route": "/gap/contractors-subcontractors-lack-ai-scoring-or-performance-pr",
+        "path": "client/src/App.js:119",
+        "route": "/cost-estimate-review",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIConstructionBidAnalyzer",
+        "path": "client/src/components/Sidebar.js:28",
+        "route": "/cost-estimate-review",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIConstructionBidAnalyzer",
+        "path": "client/src/pages/Dashboard.js:25",
+        "route": "/cost-estimate-review",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIConstructionBidAnalyzer",
+        "path": "client/src/components/Sidebar.js:28",
+        "route": "",
         "originApp": "construction-built-environment/construction-manager"
       }
     ]
@@ -3017,7 +3067,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:113",
+        "path": "client/src/App.js:105",
         "route": "/cost-estimates",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -3050,6 +3100,13 @@
         "originApp": "construction-built-environment/construction-manager"
       },
       {
+        "kind": "page",
+        "sourceProject": "AIConstructionBidAnalyzer",
+        "path": "client/src/pages/CostEstimatesPage.js",
+        "route": "/CostEstimatesPage",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
         "kind": "api",
         "sourceProject": "AIConstructionBidAnalyzer",
         "path": "server/routes/ai.js:70",
@@ -3062,62 +3119,31 @@
         "path": "backend/src/models/CostEstimate.js",
         "route": "",
         "originApp": "construction-built-environment/landscaping-design-estimator"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/pages/CostEstimatesPage.js",
-        "route": "/CostEstimatesPage",
-        "originApp": "construction-built-environment/construction-manager"
       }
     ]
   },
   {
-    "name": "Costs Estimate Review",
-    "canonicalKey": "cost estimate review",
-    "aliases": [
-      "Cost Estimate Review"
-    ],
+    "name": "Cost Snapshots",
+    "canonicalKey": "cost snapshot",
+    "aliases": [],
     "kinds": [
-      "navigation",
-      "page"
+      "api"
     ],
     "routes": [
-      "/cost-estimate-review"
+      "/organizations/:organizationId/projects/:projectId/cost-snapshots"
     ],
     "sourceProjects": [
-      "AIConstructionBidAnalyzer"
+      "AIConstructionManager"
     ],
     "consolidatedFromApps": [
       "construction-built-environment/construction-manager"
     ],
     "evidence": [
       {
-        "kind": "page",
-        "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:127",
-        "route": "/cost-estimate-review",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/components/Sidebar.js:28",
-        "route": "/cost-estimate-review",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/pages/Dashboard.js:25",
-        "route": "/cost-estimate-review",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "navigation",
-        "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/components/Sidebar.js:28",
-        "route": "",
+        "kind": "api",
+        "sourceProject": "AIConstructionManager",
+        "path": "backend/routes/controlledWorkflow.js:47",
+        "route": "/organizations/:organizationId/projects/:projectId/cost-snapshots",
         "originApp": "construction-built-environment/construction-manager"
       }
     ]
@@ -3175,14 +3201,14 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:141",
+        "path": "client/src/App.js:133",
         "route": "/codex/custom-viz",
         "originApp": "construction-built-environment/construction-manager"
       },
       {
         "kind": "page",
         "sourceProject": "AIConstructionManager",
-        "path": "frontend/src/App.js:167",
+        "path": "frontend/src/App.js:158",
         "route": "/codex/custom-viz",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -3318,7 +3344,7 @@
   },
   {
     "name": "Daily Reports Full",
-    "canonicalKey": "daily full reports",
+    "canonicalKey": "daily full report",
     "aliases": [],
     "kinds": [
       "page"
@@ -3336,7 +3362,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionManager",
-        "path": "frontend/src/App.js:175",
+        "path": "frontend/src/App.js:166",
         "route": "/daily-reports-full",
         "originApp": "construction-built-environment/construction-manager"
       }
@@ -3346,7 +3372,8 @@
     "name": "Designs",
     "canonicalKey": "design",
     "aliases": [
-      "Design Detail"
+      "Design Detail",
+      "Designs Page"
     ],
     "kinds": [
       "model",
@@ -3355,6 +3382,7 @@
     "routes": [
       "/DesignDetail",
       "/Designs",
+      "/DesignsPage",
       "/designs"
     ],
     "sourceProjects": [
@@ -3428,6 +3456,13 @@
         "path": "frontend/src/pages/Dashboard.js:6",
         "route": "/designs",
         "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AILandscapingDesignEstimator",
+        "path": "frontend/src/pages/DesignsPage.js",
+        "route": "/DesignsPage",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
       }
     ]
   },
@@ -3490,7 +3525,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:109",
+        "path": "client/src/App.js:101",
         "route": "/documents",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -3547,7 +3582,7 @@
   },
   {
     "name": "Documents Extraction",
-    "canonicalKey": "documents extraction",
+    "canonicalKey": "document extraction",
     "aliases": [],
     "kinds": [
       "navigation"
@@ -3758,7 +3793,7 @@
       {
         "kind": "api",
         "sourceProject": "AISmartBuildingManager",
-        "path": "backend/routes/ai.js:226",
+        "path": "backend/routes/ai.js:224",
         "route": "/energy-forecast",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -3798,7 +3833,7 @@
       {
         "kind": "api",
         "sourceProject": "AISmartBuildingManager",
-        "path": "backend/routes/ai.js:134",
+        "path": "backend/routes/ai.js:132",
         "route": "/energy-optimize",
         "originApp": "construction-built-environment/construction-manager"
       }
@@ -3869,7 +3904,7 @@
       {
         "kind": "api",
         "sourceProject": "AIHomeRenovationProjectManager",
-        "path": "server/index.js:16",
+        "path": "server/index.js:5",
         "route": "../.env",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -3906,32 +3941,6 @@
         "sourceProject": "AISmartBuildingManager",
         "path": "backend/server.js:2",
         "route": "../.env",
-        "originApp": "construction-built-environment/construction-manager"
-      }
-    ]
-  },
-  {
-    "name": "Equipment Permits Submittals Warranties Lack Paired AI Endpo",
-    "canonicalKey": "ai endpo equipment lack paired permits submittals warranties",
-    "aliases": [],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/gap/equipment-permits-submittals-warranties-lack-paired-ai-endpo"
-    ],
-    "sourceProjects": [
-      "AIConstructionManager"
-    ],
-    "consolidatedFromApps": [
-      "construction-built-environment/construction-manager"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AIConstructionManager",
-        "path": "frontend/src/App.js:193",
-        "route": "/gap/equipment-permits-submittals-warranties-lack-paired-ai-endpo",
         "originApp": "construction-built-environment/construction-manager"
       }
     ]
@@ -4056,7 +4065,7 @@
       {
         "kind": "api",
         "sourceProject": "AIArchitecturalDesignGenerator",
-        "path": "backend/src/server.js:80",
+        "path": "backend/src/server.js:82",
         "route": "/api/features",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       }
@@ -4142,7 +4151,7 @@
   },
   {
     "name": "Gap Contractors Subcontractors Lack AI Scoring Or Performance Pr",
-    "canonicalKey": "ai contractors gap lack or performance pr scoring subcontractors",
+    "canonicalKey": "ai contractor gap lack or performance pr scoring subcontractor",
     "aliases": [],
     "kinds": [
       "page"
@@ -4168,7 +4177,7 @@
   },
   {
     "name": "Gap Equipment Permits Submittals Warranties Lack Paired AI Endpo",
-    "canonicalKey": "ai endpo equipment gap lack paired permits submittals warranties",
+    "canonicalKey": "ai endpo equipment gap lack paired permit submittal warranty",
     "aliases": [],
     "kinds": [
       "page"
@@ -4254,7 +4263,7 @@
   },
   {
     "name": "Gap Meetingminutes Lacks Summarization Or Action Item Extraction",
-    "canonicalKey": "action extraction gap item lacks meetingminutes or summarization",
+    "canonicalKey": "action extraction gap item lack meetingminute or summarization",
     "aliases": [],
     "kinds": [
       "page"
@@ -4912,7 +4921,7 @@
   },
   {
     "name": "Gap No Realtime Building Dashboard Route Stubs O",
-    "canonicalKey": "building dashboard gap no o realtime route stubs",
+    "canonicalKey": "building dashboard gap no o realtime route stub",
     "aliases": [],
     "kinds": [
       "page"
@@ -5322,7 +5331,7 @@
   },
   {
     "name": "Gap Progressphotos Lacks Vision Based Photo Analysis Delay Quali",
-    "canonicalKey": "analysis based delay gap lacks photo progressphotos quali vision",
+    "canonicalKey": "analysis based delay gap lack photo progressphoto quali vision",
     "aliases": [],
     "kinds": [
       "page"
@@ -5348,7 +5357,7 @@
   },
   {
     "name": "Gap Punchlist Lacks AI Prioritization Or Closeout Timeline Predi",
-    "canonicalKey": "ai closeout gap lacks or predi prioritization punchlist timeline",
+    "canonicalKey": "ai closeout gap lack or predi prioritization punchlist timeline",
     "aliases": [],
     "kinds": [
       "page"
@@ -5411,7 +5420,7 @@
       {
         "kind": "api",
         "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "server/index.js:50",
+        "path": "server/index.js:52",
         "route": "/api/health",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -5621,14 +5630,14 @@
       {
         "kind": "api",
         "sourceProject": "AIConstructionManager",
-        "path": "backend/server.js:58",
+        "path": "backend/server.js:60",
         "route": "/api/health",
         "originApp": "construction-built-environment/construction-manager"
       },
       {
         "kind": "api",
         "sourceProject": "AIHomeRenovationProjectManager",
-        "path": "server/index.js:78",
+        "path": "server/index.js:72",
         "route": "/api/health",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -5740,21 +5749,28 @@
       {
         "kind": "api",
         "sourceProject": "AIArchitecturalDesignGenerator",
-        "path": "backend/src/server.js:57",
+        "path": "backend/src/server.js:58",
         "route": "/api/health",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       },
       {
         "kind": "api",
         "sourceProject": "AILandscapingDesignEstimator",
-        "path": "backend/src/server.js:79",
+        "path": "backend/src/server.js:80",
         "route": "/api/health",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       },
       {
         "kind": "api",
         "sourceProject": "AIPlumbingElectricalHVACEstimator",
-        "path": "backend/src/index.js:62",
+        "path": "backend/src/index.js:47",
+        "route": "/api/health",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIPlumbingElectricalHVACEstimator",
+        "path": "backend/src/index.js:70",
         "route": "/api/health",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       }
@@ -6000,7 +6016,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:108",
+        "path": "client/src/App.js:100",
         "route": "/labor",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -6071,7 +6087,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:149",
+        "path": "client/src/App.js:141",
         "route": "/cf/liability-insurance-recommendation-engine",
         "originApp": "construction-built-environment/construction-manager"
       }
@@ -6129,32 +6145,6 @@
     ]
   },
   {
-    "name": "Limited Mobile Field App Surfaces",
-    "canonicalKey": "field limited mobile surface",
-    "aliases": [],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/gap/limited-mobile-field-app-surfaces"
-    ],
-    "sourceProjects": [
-      "AIConstructionBidAnalyzer"
-    ],
-    "consolidatedFromApps": [
-      "construction-built-environment/construction-manager"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:158",
-        "route": "/gap/limited-mobile-field-app-surfaces",
-        "originApp": "construction-built-environment/construction-manager"
-      }
-    ]
-  },
-  {
     "name": "Login",
     "canonicalKey": "login",
     "aliases": [
@@ -6188,28 +6178,28 @@
       {
         "kind": "api",
         "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "server/routes/auth.js:8",
+        "path": "server/routes/auth.js:9",
         "route": "/login",
         "originApp": "construction-built-environment/construction-manager"
       },
       {
         "kind": "page",
         "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:95",
+        "path": "client/src/App.js:87",
         "route": "/login",
         "originApp": "construction-built-environment/construction-manager"
       },
       {
         "kind": "api",
         "sourceProject": "AIConstructionManager",
-        "path": "backend/routes/auth.js:21",
+        "path": "backend/routes/auth.js:23",
         "route": "/login",
         "originApp": "construction-built-environment/construction-manager"
       },
       {
         "kind": "page",
         "sourceProject": "AIConstructionManager",
-        "path": "frontend/src/App.js:170",
+        "path": "frontend/src/App.js:161",
         "route": "/login",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -6223,7 +6213,7 @@
       {
         "kind": "api",
         "sourceProject": "AIHomeRenovationProjectManager",
-        "path": "server/routes/auth.js:7",
+        "path": "server/routes/auth.js:8",
         "route": "/login",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -6293,7 +6283,7 @@
       {
         "kind": "api",
         "sourceProject": "AILandscapingDesignEstimator",
-        "path": "backend/src/routes/auth.js:7",
+        "path": "backend/src/routes/auth.js:15",
         "route": "/login",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       },
@@ -6480,28 +6470,77 @@
     ]
   },
   {
-    "name": "Meetingminutes Lacks Summarization Or Action Item Extraction",
-    "canonicalKey": "action extraction item lacks meetingminutes or summarization",
+    "name": "Me",
+    "canonicalKey": "me",
     "aliases": [],
     "kinds": [
-      "page"
+      "api"
     ],
     "routes": [
-      "/gap/meetingminutes-lacks-summarization-or-action-item-extraction"
+      "/me"
     ],
     "sourceProjects": [
-      "AIConstructionManager"
+      "AIArchitecturalDesignGenerator",
+      "AIConstructionBidAnalyzer",
+      "AIConstructionManager",
+      "AIHomeRenovationProjectManager",
+      "AILandscapingDesignEstimator",
+      "AIPlumbingElectricalHVACEstimator",
+      "AISmartBuildingManager"
     ],
     "consolidatedFromApps": [
-      "construction-built-environment/construction-manager"
+      "construction-built-environment/construction-manager",
+      "construction-built-environment/landscaping-design-estimator"
     ],
     "evidence": [
       {
-        "kind": "page",
-        "sourceProject": "AIConstructionManager",
-        "path": "frontend/src/App.js:195",
-        "route": "/gap/meetingminutes-lacks-summarization-or-action-item-extraction",
+        "kind": "api",
+        "sourceProject": "AIConstructionBidAnalyzer",
+        "path": "server/routes/auth.js:93",
+        "route": "/me",
         "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIConstructionManager",
+        "path": "backend/routes/auth.js:44",
+        "route": "/me",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "server/routes/auth.js:54",
+        "route": "/me",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AISmartBuildingManager",
+        "path": "backend/routes/auth.js:49",
+        "route": "/me",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIArchitecturalDesignGenerator",
+        "path": "backend/src/routes/auth.js:102",
+        "route": "/me",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AILandscapingDesignEstimator",
+        "path": "backend/src/routes/auth.js:58",
+        "route": "/me",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIPlumbingElectricalHVACEstimator",
+        "path": "backend/src/routes/auth.js:52",
+        "route": "/me",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
       }
     ]
   },
@@ -6525,7 +6564,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:133",
+        "path": "client/src/App.js:125",
         "route": "/missing-features",
         "originApp": "construction-built-environment/construction-manager"
       }
@@ -6577,7 +6616,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionManager",
-        "path": "frontend/src/App.js:187",
+        "path": "frontend/src/App.js:178",
         "route": "/cf/multi-modal-progress-tracking",
         "originApp": "construction-built-environment/construction-manager"
       }
@@ -6605,266 +6644,6 @@
         "sourceProject": "AIConstructionManager",
         "path": "backend/routes/multimodalProgress.js:58",
         "route": "/multimodal-progress",
-        "originApp": "construction-built-environment/construction-manager"
-      }
-    ]
-  },
-  {
-    "name": "No Agentic Bid Negotiation Flow",
-    "canonicalKey": "agentic bid flow negotiation no",
-    "aliases": [],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/gap/no-agentic-bid-negotiation-flow"
-    ],
-    "sourceProjects": [
-      "AIConstructionBidAnalyzer"
-    ],
-    "consolidatedFromApps": [
-      "construction-built-environment/construction-manager"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:153",
-        "route": "/gap/no-agentic-bid-negotiation-flow",
-        "originApp": "construction-built-environment/construction-manager"
-      }
-    ]
-  },
-  {
-    "name": "No Calendar Integration",
-    "canonicalKey": "calendar integration no",
-    "aliases": [],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/gap/no-calendar-integration"
-    ],
-    "sourceProjects": [
-      "AIConstructionBidAnalyzer"
-    ],
-    "consolidatedFromApps": [
-      "construction-built-environment/construction-manager"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:157",
-        "route": "/gap/no-calendar-integration",
-        "originApp": "construction-built-environment/construction-manager"
-      }
-    ]
-  },
-  {
-    "name": "No Equipment Rental Marketplace Or Availability Tracker",
-    "canonicalKey": "availability equipment marketplace no or rental tracker",
-    "aliases": [],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/gap/no-equipment-rental-marketplace-or-availability-tracker"
-    ],
-    "sourceProjects": [
-      "AIConstructionBidAnalyzer"
-    ],
-    "consolidatedFromApps": [
-      "construction-built-environment/construction-manager"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:156",
-        "route": "/gap/no-equipment-rental-marketplace-or-availability-tracker",
-        "originApp": "construction-built-environment/construction-manager"
-      }
-    ]
-  },
-  {
-    "name": "No Field Worker Mobile App Or Real Time Gps Tracking",
-    "canonicalKey": "field gps mobile no or real time tracking worker",
-    "aliases": [],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/gap/no-field-worker-mobile-app-or-real-time-gps-tracking"
-    ],
-    "sourceProjects": [
-      "AIConstructionManager"
-    ],
-    "consolidatedFromApps": [
-      "construction-built-environment/construction-manager"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AIConstructionManager",
-        "path": "frontend/src/App.js:198",
-        "route": "/gap/no-field-worker-mobile-app-or-real-time-gps-tracking",
-        "originApp": "construction-built-environment/construction-manager"
-      }
-    ]
-  },
-  {
-    "name": "No Payment Accounting Module",
-    "canonicalKey": "accounting no payment",
-    "aliases": [],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/gap/no-payment-accounting-module"
-    ],
-    "sourceProjects": [
-      "AIConstructionManager"
-    ],
-    "consolidatedFromApps": [
-      "construction-built-environment/construction-manager"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AIConstructionManager",
-        "path": "frontend/src/App.js:199",
-        "route": "/gap/no-payment-accounting-module",
-        "originApp": "construction-built-environment/construction-manager"
-      }
-    ]
-  },
-  {
-    "name": "No Photo Site Vision AI For Progress Or Safety Inspection",
-    "canonicalKey": "ai for inspection no or photo progress safety site vision",
-    "aliases": [],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/gap/no-photo-site-vision-ai-for-progress-or-safety-inspection"
-    ],
-    "sourceProjects": [
-      "AIConstructionBidAnalyzer"
-    ],
-    "consolidatedFromApps": [
-      "construction-built-environment/construction-manager"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:151",
-        "route": "/gap/no-photo-site-vision-ai-for-progress-or-safety-inspection",
-        "originApp": "construction-built-environment/construction-manager"
-      }
-    ]
-  },
-  {
-    "name": "No Rfq Automation Or Vendor Outreach Workflow",
-    "canonicalKey": "automation no or outreach rfq vendor workflow",
-    "aliases": [],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/gap/no-rfq-automation-or-vendor-outreach-workflow"
-    ],
-    "sourceProjects": [
-      "AIConstructionBidAnalyzer"
-    ],
-    "consolidatedFromApps": [
-      "construction-built-environment/construction-manager"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:155",
-        "route": "/gap/no-rfq-automation-or-vendor-outreach-workflow",
-        "originApp": "construction-built-environment/construction-manager"
-      }
-    ]
-  },
-  {
-    "name": "No Supplier Directory Vendor Management Portal",
-    "canonicalKey": "directory no portal supplier vendor",
-    "aliases": [],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/gap/no-supplier-directory-vendor-management-portal"
-    ],
-    "sourceProjects": [
-      "AIConstructionBidAnalyzer"
-    ],
-    "consolidatedFromApps": [
-      "construction-built-environment/construction-manager"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:154",
-        "route": "/gap/no-supplier-directory-vendor-management-portal",
-        "originApp": "construction-built-environment/construction-manager"
-      }
-    ]
-  },
-  {
-    "name": "No Supplier Vendor Sourcing Workflow",
-    "canonicalKey": "no sourcing supplier vendor workflow",
-    "aliases": [],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/gap/no-supplier-vendor-sourcing-workflow"
-    ],
-    "sourceProjects": [
-      "AIConstructionManager"
-    ],
-    "consolidatedFromApps": [
-      "construction-built-environment/construction-manager"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AIConstructionManager",
-        "path": "frontend/src/App.js:197",
-        "route": "/gap/no-supplier-vendor-sourcing-workflow",
-        "originApp": "construction-built-environment/construction-manager"
-      }
-    ]
-  },
-  {
-    "name": "No Third Party Trimble Procore Revit Integrations",
-    "canonicalKey": "integration no party procore revit third trimble",
-    "aliases": [],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/gap/no-third-party-trimble-procore-revit-integrations"
-    ],
-    "sourceProjects": [
-      "AIConstructionManager"
-    ],
-    "consolidatedFromApps": [
-      "construction-built-environment/construction-manager"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AIConstructionManager",
-        "path": "frontend/src/App.js:200",
-        "route": "/gap/no-third-party-trimble-procore-revit-integrations",
         "originApp": "construction-built-environment/construction-manager"
       }
     ]
@@ -6923,7 +6702,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:123",
+        "path": "client/src/App.js:115",
         "route": "/notifications",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -7026,7 +6805,7 @@
       {
         "kind": "api",
         "sourceProject": "AISmartBuildingManager",
-        "path": "backend/routes/ai.js:171",
+        "path": "backend/routes/ai.js:169",
         "route": "/occupancy-optimization",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -7047,83 +6826,8 @@
     ]
   },
   {
-    "name": "Operations",
-    "canonicalKey": "operation",
-    "aliases": [],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/codex/operations"
-    ],
-    "sourceProjects": [
-      "AIArchitecturalDesignGenerator",
-      "AIConstructionBidAnalyzer",
-      "AIConstructionManager",
-      "AIHomeRenovationProjectManager",
-      "AILandscapingDesignEstimator",
-      "AIPlumbingElectricalHVACEstimator",
-      "AISmartBuildingManager"
-    ],
-    "consolidatedFromApps": [
-      "construction-built-environment/construction-manager",
-      "construction-built-environment/landscaping-design-estimator"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:142",
-        "route": "/codex/operations",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIConstructionManager",
-        "path": "frontend/src/App.js:168",
-        "route": "/codex/operations",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIHomeRenovationProjectManager",
-        "path": "client/src/App.js:78",
-        "route": "/codex/operations",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AISmartBuildingManager",
-        "path": "frontend/src/App.jsx:94",
-        "route": "/codex/operations",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIArchitecturalDesignGenerator",
-        "path": "frontend/src/App.jsx:62",
-        "route": "/codex/operations",
-        "originApp": "construction-built-environment/landscaping-design-estimator"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AILandscapingDesignEstimator",
-        "path": "frontend/src/App.js:86",
-        "route": "/codex/operations",
-        "originApp": "construction-built-environment/landscaping-design-estimator"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIPlumbingElectricalHVACEstimator",
-        "path": "frontend/src/App.js:112",
-        "route": "/codex/operations",
-        "originApp": "construction-built-environment/landscaping-design-estimator"
-      }
-    ]
-  },
-  {
     "name": "Operations Pdf",
-    "canonicalKey": "operations pdf",
+    "canonicalKey": "operation pdf",
     "aliases": [],
     "kinds": [
       "api"
@@ -7195,6 +6899,32 @@
         "sourceProject": "AIHomeRenovationProjectManager",
         "path": "server/routes/documents.js:55",
         "route": "/ai/organize",
+        "originApp": "construction-built-environment/construction-manager"
+      }
+    ]
+  },
+  {
+    "name": "Packages",
+    "canonicalKey": "package",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/organizations/:organizationId/packages"
+    ],
+    "sourceProjects": [
+      "AIConstructionBidAnalyzer"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/construction-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIConstructionBidAnalyzer",
+        "path": "server/routes/controlledBids.js:14",
+        "route": "/organizations/:organizationId/packages",
         "originApp": "construction-built-environment/construction-manager"
       }
     ]
@@ -7296,7 +7026,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:128",
+        "path": "client/src/App.js:120",
         "route": "/permit-checklists",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -7404,7 +7134,7 @@
   },
   {
     "name": "Permits Risk",
-    "canonicalKey": "permits risk",
+    "canonicalKey": "permit risk",
     "aliases": [],
     "kinds": [
       "api"
@@ -7448,7 +7178,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionManager",
-        "path": "frontend/src/App.js:192",
+        "path": "frontend/src/App.js:183",
         "route": "/cf/permitting-regulatory-prediction",
         "originApp": "construction-built-environment/construction-manager"
       }
@@ -7541,7 +7271,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:125",
+        "path": "client/src/App.js:117",
         "route": "/plan-spec-upload",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -7729,7 +7459,7 @@
       {
         "kind": "api",
         "sourceProject": "AISmartBuildingManager",
-        "path": "backend/routes/ai.js:191",
+        "path": "backend/routes/ai.js:189",
         "route": "/predictive-maintenance",
         "originApp": "construction-built-environment/construction-manager"
       }
@@ -7791,7 +7521,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionManager",
-        "path": "frontend/src/App.js:188",
+        "path": "frontend/src/App.js:179",
         "route": "/cf/predictive-project-completion",
         "originApp": "construction-built-environment/construction-manager"
       }
@@ -7897,7 +7627,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:134",
+        "path": "client/src/App.js:126",
         "route": "/production-readiness",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -7913,32 +7643,6 @@
         "sourceProject": "ai-data-center-construction-coordinator",
         "path": "frontend/src/app/(protected)/production-readiness/page.tsx",
         "route": "/production-readiness",
-        "originApp": "construction-built-environment/construction-manager"
-      }
-    ]
-  },
-  {
-    "name": "Progressphotos Lacks Vision Based Photo Analysis Delay Quali",
-    "canonicalKey": "analysis based delay lacks photo progressphotos quali vision",
-    "aliases": [],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/gap/progressphotos-lacks-vision-based-photo-analysis-delay-quali"
-    ],
-    "sourceProjects": [
-      "AIConstructionManager"
-    ],
-    "consolidatedFromApps": [
-      "construction-built-environment/construction-manager"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AIConstructionManager",
-        "path": "frontend/src/App.js:194",
-        "route": "/gap/progressphotos-lacks-vision-based-photo-analysis-delay-quali",
         "originApp": "construction-built-environment/construction-manager"
       }
     ]
@@ -8049,7 +7753,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:132",
+        "path": "client/src/App.js:124",
         "route": "/project-risk-dashboard",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -8071,7 +7775,7 @@
   },
   {
     "name": "Projects Full",
-    "canonicalKey": "full projects",
+    "canonicalKey": "full project",
     "aliases": [],
     "kinds": [
       "page"
@@ -8089,7 +7793,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionManager",
-        "path": "frontend/src/App.js:173",
+        "path": "frontend/src/App.js:164",
         "route": "/projects-full",
         "originApp": "construction-built-environment/construction-manager"
       }
@@ -8097,7 +7801,7 @@
   },
   {
     "name": "Projects Risk Metrics",
-    "canonicalKey": "metric projects risk",
+    "canonicalKey": "metric project risk",
     "aliases": [],
     "kinds": [
       "navigation"
@@ -8186,32 +7890,6 @@
     ]
   },
   {
-    "name": "Punchlist Lacks AI Prioritization Or Closeout Timeline Predi",
-    "canonicalKey": "ai closeout lacks or predi prioritization punchlist timeline",
-    "aliases": [],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/gap/punchlist-lacks-ai-prioritization-or-closeout-timeline-predi"
-    ],
-    "sourceProjects": [
-      "AIConstructionManager"
-    ],
-    "consolidatedFromApps": [
-      "construction-built-environment/construction-manager"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AIConstructionManager",
-        "path": "frontend/src/App.js:196",
-        "route": "/gap/punchlist-lacks-ai-prioritization-or-closeout-timeline-predi",
-        "originApp": "construction-built-environment/construction-manager"
-      }
-    ]
-  },
-  {
     "name": "Punchlist Pdf",
     "canonicalKey": "pdf punchlist",
     "aliases": [],
@@ -8283,7 +7961,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:148",
+        "path": "client/src/App.js:140",
         "route": "/cf/real-time-cost-tracking-with-variance-alerts",
         "originApp": "construction-built-environment/construction-manager"
       }
@@ -8352,7 +8030,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:119",
+        "path": "client/src/App.js:111",
         "route": "/reports",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -8407,6 +8085,20 @@
       },
       {
         "kind": "page",
+        "sourceProject": "AIConstructionBidAnalyzer",
+        "path": "client/src/pages/ReportsPage.js",
+        "route": "/ReportsPage",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AISmartBuildingManager",
+        "path": "frontend/src/pages/ReportsPage.jsx",
+        "route": "/ReportsPage",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "page",
         "sourceProject": "AILandscapingDesignEstimator",
         "path": "frontend/src/App.js:126",
         "route": "/reports",
@@ -8453,20 +8145,6 @@
         "path": "frontend/src/pages/Reports.js",
         "route": "/Reports",
         "originApp": "construction-built-environment/landscaping-design-estimator"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/pages/ReportsPage.js",
-        "route": "/ReportsPage",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AISmartBuildingManager",
-        "path": "frontend/src/pages/ReportsPage.jsx",
-        "route": "/ReportsPage",
-        "originApp": "construction-built-environment/construction-manager"
       },
       {
         "kind": "page",
@@ -8558,26 +8236,38 @@
   {
     "name": "Results",
     "canonicalKey": "result",
-    "aliases": [],
+    "aliases": [
+      "Result"
+    ],
     "kinds": [
       "api"
     ],
     "routes": [
+      "/integrations/:outboxId/result",
       "/results"
     ],
     "sourceProjects": [
+      "AILandscapingDesignEstimator",
       "AISmartBuildingManager"
     ],
     "consolidatedFromApps": [
-      "construction-built-environment/construction-manager"
+      "construction-built-environment/construction-manager",
+      "construction-built-environment/landscaping-design-estimator"
     ],
     "evidence": [
       {
         "kind": "api",
         "sourceProject": "AISmartBuildingManager",
-        "path": "backend/routes/ai.js:278",
+        "path": "backend/routes/ai.js:276",
         "route": "/results",
         "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AILandscapingDesignEstimator",
+        "path": "backend/src/governance/router.js:245",
+        "route": "/integrations/:outboxId/result",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
       }
     ]
   },
@@ -8638,7 +8328,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:112",
+        "path": "client/src/App.js:104",
         "route": "/risk-assessments",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -8768,7 +8458,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:129",
+        "path": "client/src/App.js:121",
         "route": "/safety-plans",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -8836,6 +8526,32 @@
         "sourceProject": "AIConstructionManager",
         "path": "backend/routes/customViews.js:23",
         "route": "/schedule-gantt",
+        "originApp": "construction-built-environment/construction-manager"
+      }
+    ]
+  },
+  {
+    "name": "Scope Comparison",
+    "canonicalKey": "comparison scope",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/submissions/:id/scope-comparison"
+    ],
+    "sourceProjects": [
+      "AIConstructionBidAnalyzer"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/construction-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIConstructionBidAnalyzer",
+        "path": "server/routes/controlledBids.js:24",
+        "route": "/submissions/:id/scope-comparison",
         "originApp": "construction-built-environment/construction-manager"
       }
     ]
@@ -8911,7 +8627,7 @@
       {
         "kind": "api",
         "sourceProject": "AISmartBuildingManager",
-        "path": "backend/routes/ai.js:209",
+        "path": "backend/routes/ai.js:207",
         "route": "/security-anomaly-detection",
         "originApp": "construction-built-environment/construction-manager"
       }
@@ -8949,32 +8665,6 @@
         "sourceProject": "AISmartBuildingManager",
         "path": "frontend/src/pages/SecurityAnomalyPage.jsx",
         "route": "/SecurityAnomalyPage",
-        "originApp": "construction-built-environment/construction-manager"
-      }
-    ]
-  },
-  {
-    "name": "Settings Page",
-    "canonicalKey": "settings",
-    "aliases": [],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/SettingsPage"
-    ],
-    "sourceProjects": [
-      "AISmartBuildingManager"
-    ],
-    "consolidatedFromApps": [
-      "construction-built-environment/construction-manager"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AISmartBuildingManager",
-        "path": "frontend/src/pages/SettingsPage.jsx",
-        "route": "/SettingsPage",
         "originApp": "construction-built-environment/construction-manager"
       }
     ]
@@ -9328,7 +9018,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:150",
+        "path": "client/src/App.js:142",
         "route": "/cf/subcontractor-performance-scoring",
         "originApp": "construction-built-environment/construction-manager"
       }
@@ -9354,7 +9044,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:130",
+        "path": "client/src/App.js:122",
         "route": "/subcontractor-scoring",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -9405,7 +9095,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:110",
+        "path": "client/src/App.js:102",
         "route": "/subcontractors",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -9434,7 +9124,7 @@
   },
   {
     "name": "Submittals Review",
-    "canonicalKey": "review submittals",
+    "canonicalKey": "review submittal",
     "aliases": [],
     "kinds": [
       "api"
@@ -9554,7 +9244,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:146",
+        "path": "client/src/App.js:138",
         "route": "/cf/supplier-intelligence",
         "originApp": "construction-built-environment/construction-manager"
       }
@@ -9606,7 +9296,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionManager",
-        "path": "frontend/src/App.js:190",
+        "path": "frontend/src/App.js:181",
         "route": "/cf/supply-chain-optimization",
         "originApp": "construction-built-environment/construction-manager"
       }
@@ -9640,7 +9330,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:121",
+        "path": "client/src/App.js:113",
         "route": "/tasks",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -9661,10 +9351,10 @@
     ]
   },
   {
-    "name": "Threshold Alerts",
+    "name": "Threshold Alerts Page",
     "canonicalKey": "alert threshold",
     "aliases": [
-      "Threshold Alerts Page"
+      "Threshold Alerts"
     ],
     "kinds": [
       "page"
@@ -9740,14 +9430,14 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:140",
+        "path": "client/src/App.js:132",
         "route": "/insights/timeline",
         "originApp": "construction-built-environment/construction-manager"
       },
       {
         "kind": "page",
         "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:116",
+        "path": "client/src/App.js:108",
         "route": "/timelines",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -9768,7 +9458,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionManager",
-        "path": "frontend/src/App.js:166",
+        "path": "frontend/src/App.js:157",
         "route": "/insights/timeline",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -9830,6 +9520,13 @@
       },
       {
         "kind": "page",
+        "sourceProject": "AIConstructionBidAnalyzer",
+        "path": "client/src/pages/TimelinesPage.js",
+        "route": "/TimelinesPage",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "page",
         "sourceProject": "AIArchitecturalDesignGenerator",
         "path": "frontend/src/App.jsx:60",
         "route": "/insights/timeline",
@@ -9876,13 +9573,6 @@
         "path": "frontend/src/pages/TimelineView.jsx",
         "route": "/TimelineView",
         "originApp": "construction-built-environment/landscaping-design-estimator"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/pages/TimelinesPage.js",
-        "route": "/TimelinesPage",
-        "originApp": "construction-built-environment/construction-manager"
       }
     ]
   },
@@ -10091,7 +9781,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:145",
+        "path": "client/src/App.js:137",
         "route": "/cf/vision-based-site-inspection",
         "originApp": "construction-built-environment/construction-manager"
       }
@@ -10281,7 +9971,7 @@
       {
         "kind": "api",
         "sourceProject": "AISmartBuildingManager",
-        "path": "backend/routes/ai.js:263",
+        "path": "backend/routes/ai.js:261",
         "route": "/water-usage-optimization",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -10406,7 +10096,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionManager",
-        "path": "frontend/src/App.js:191",
+        "path": "frontend/src/App.js:182",
         "route": "/cf/worker-wellness-fatigue-monitoring",
         "originApp": "construction-built-environment/construction-manager"
       }

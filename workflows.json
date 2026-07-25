@@ -185,13 +185,139 @@
       ],
       "seeds": [
         {
-          "id": "plan-spec-upload-demo",
+          "id": "plan-spec-upload-001",
           "state": "uploaded",
-          "projectReference": "PROJECT-DEMO-101",
-          "documentName": "Issued-for-bid architectural set",
+          "projectReference": "CONSTRUCTI-0001",
+          "documentName": "Issued-for-bid architectural set — North Region — North Region",
           "documentType": "Plans",
-          "revision": "IFB-01",
+          "revision": "IFB-01 — North Region — North Region",
           "source": "Local upload"
+        },
+        {
+          "id": "plan-spec-upload-002",
+          "state": "uploaded",
+          "projectReference": "CONSTRUCTI-0002",
+          "documentName": "Issued-for-bid architectural set — Enterprise Account — Enterprise Account",
+          "documentType": "Specifications",
+          "revision": "IFB-01 — Enterprise Account — Enterprise Account",
+          "source": "Manual entry"
+        },
+        {
+          "id": "plan-spec-upload-003",
+          "state": "uploaded",
+          "projectReference": "CONSTRUCTI-0003",
+          "documentName": "Issued-for-bid architectural set — Quarterly Cycle — Quarterly Cycle",
+          "documentType": "Addendum",
+          "revision": "IFB-01 — Quarterly Cycle — Quarterly Cycle",
+          "source": "Sandbox connector"
+        },
+        {
+          "id": "plan-spec-upload-004",
+          "state": "uploaded",
+          "projectReference": "CONSTRUCTI-0004",
+          "documentName": "Issued-for-bid architectural set — Priority Queue — Priority Queue",
+          "documentType": "Schedule",
+          "revision": "IFB-01 — Priority Queue — Priority Queue",
+          "source": "Local upload"
+        },
+        {
+          "id": "plan-spec-upload-005",
+          "state": "uploaded",
+          "projectReference": "CONSTRUCTI-0005",
+          "documentName": "Issued-for-bid architectural set — Operations Review — Operations Review",
+          "documentType": "Plans",
+          "revision": "IFB-01 — Operations Review — Operations Review",
+          "source": "Manual entry"
+        },
+        {
+          "id": "plan-spec-upload-006",
+          "state": "uploaded",
+          "projectReference": "CONSTRUCTI-0006",
+          "documentName": "Issued-for-bid architectural set — Customer Request — Customer Request",
+          "documentType": "Specifications",
+          "revision": "IFB-01 — Customer Request — Customer Request",
+          "source": "Sandbox connector"
+        },
+        {
+          "id": "plan-spec-upload-007",
+          "state": "uploaded",
+          "projectReference": "CONSTRUCTI-0007",
+          "documentName": "Issued-for-bid architectural set — Compliance Check — Compliance Check",
+          "documentType": "Addendum",
+          "revision": "IFB-01 — Compliance Check — Compliance Check",
+          "source": "Local upload"
+        },
+        {
+          "id": "plan-spec-upload-008",
+          "state": "uploaded",
+          "projectReference": "CONSTRUCTI-0008",
+          "documentName": "Issued-for-bid architectural set — Service Window — Service Window",
+          "documentType": "Schedule",
+          "revision": "IFB-01 — Service Window — Service Window",
+          "source": "Manual entry"
+        },
+        {
+          "id": "plan-spec-upload-009",
+          "state": "uploaded",
+          "projectReference": "CONSTRUCTI-0009",
+          "documentName": "Issued-for-bid architectural set — Quality Sample — Quality Sample",
+          "documentType": "Plans",
+          "revision": "IFB-01 — Quality Sample — Quality Sample",
+          "source": "Sandbox connector"
+        },
+        {
+          "id": "plan-spec-upload-010",
+          "state": "uploaded",
+          "projectReference": "CONSTRUCTI-0010",
+          "documentName": "Issued-for-bid architectural set — Management Review — Management Review",
+          "documentType": "Specifications",
+          "revision": "IFB-01 — Management Review — Management Review",
+          "source": "Local upload"
+        },
+        {
+          "id": "plan-spec-upload-011",
+          "state": "uploaded",
+          "projectReference": "CONSTRUCTI-0011",
+          "documentName": "Issued-for-bid architectural set — Exception Follow-up — Exception Follow-up",
+          "documentType": "Addendum",
+          "revision": "IFB-01 — Exception Follow-up — Exception Follow-up",
+          "source": "Manual entry"
+        },
+        {
+          "id": "plan-spec-upload-012",
+          "state": "uploaded",
+          "projectReference": "CONSTRUCTI-0012",
+          "documentName": "Issued-for-bid architectural set — Evidence Package — Evidence Package",
+          "documentType": "Schedule",
+          "revision": "IFB-01 — Evidence Package — Evidence Package",
+          "source": "Sandbox connector"
+        },
+        {
+          "id": "plan-spec-upload-013",
+          "state": "uploaded",
+          "projectReference": "CONSTRUCTI-0013",
+          "documentName": "Issued-for-bid architectural set — Planning Cycle — Planning Cycle",
+          "documentType": "Plans",
+          "revision": "IFB-01 — Planning Cycle — Planning Cycle",
+          "source": "Local upload"
+        },
+        {
+          "id": "plan-spec-upload-014",
+          "state": "uploaded",
+          "projectReference": "CONSTRUCTI-0014",
+          "documentName": "Issued-for-bid architectural set — Performance Review — Performance Review",
+          "documentType": "Specifications",
+          "revision": "IFB-01 — Performance Review — Performance Review",
+          "source": "Manual entry"
+        },
+        {
+          "id": "plan-spec-upload-015",
+          "state": "uploaded",
+          "projectReference": "CONSTRUCTI-0015",
+          "documentName": "Issued-for-bid architectural set — Final Verification — Final Verification",
+          "documentType": "Addendum",
+          "revision": "IFB-01 — Final Verification — Final Verification",
+          "source": "Sandbox connector"
         }
       ]
     },
@@ -283,13 +409,139 @@
       ],
       "seeds": [
         {
-          "id": "bid-risk-analysis-demo",
+          "id": "bid-risk-analysis-001",
           "state": "queued",
-          "projectReference": "PROJECT-DEMO-101",
+          "projectReference": "CONSTRUCTI-0001",
           "riskCategory": "Scope gap",
-          "finding": "Temporary power responsibility is not assigned in the bid documents.",
+          "finding": "Temporary power responsibility is not assigned in the bid documents. — North Region — North Region",
+          "severity": "Low",
+          "owner": "Avery Morgan"
+        },
+        {
+          "id": "bid-risk-analysis-002",
+          "state": "queued",
+          "projectReference": "CONSTRUCTI-0002",
+          "riskCategory": "Contract term",
+          "finding": "Temporary power responsibility is not assigned in the bid documents. — Enterprise Account — Enterprise Account",
+          "severity": "Medium",
+          "owner": "Jordan Lee"
+        },
+        {
+          "id": "bid-risk-analysis-003",
+          "state": "queued",
+          "projectReference": "CONSTRUCTI-0003",
+          "riskCategory": "Schedule",
+          "finding": "Temporary power responsibility is not assigned in the bid documents. — Quarterly Cycle — Quarterly Cycle",
           "severity": "High",
-          "owner": "Demo Chief Estimator"
+          "owner": "Taylor Brooks"
+        },
+        {
+          "id": "bid-risk-analysis-004",
+          "state": "queued",
+          "projectReference": "CONSTRUCTI-0004",
+          "riskCategory": "Constructability",
+          "finding": "Temporary power responsibility is not assigned in the bid documents. — Priority Queue — Priority Queue",
+          "severity": "Critical",
+          "owner": "Morgan Chen"
+        },
+        {
+          "id": "bid-risk-analysis-005",
+          "state": "queued",
+          "projectReference": "CONSTRUCTI-0005",
+          "riskCategory": "Site condition",
+          "finding": "Temporary power responsibility is not assigned in the bid documents. — Operations Review — Operations Review",
+          "severity": "Low",
+          "owner": "Riley Patel"
+        },
+        {
+          "id": "bid-risk-analysis-006",
+          "state": "queued",
+          "projectReference": "CONSTRUCTI-0006",
+          "riskCategory": "Scope gap",
+          "finding": "Temporary power responsibility is not assigned in the bid documents. — Customer Request — Customer Request",
+          "severity": "Medium",
+          "owner": "Casey Nguyen"
+        },
+        {
+          "id": "bid-risk-analysis-007",
+          "state": "queued",
+          "projectReference": "CONSTRUCTI-0007",
+          "riskCategory": "Contract term",
+          "finding": "Temporary power responsibility is not assigned in the bid documents. — Compliance Check — Compliance Check",
+          "severity": "High",
+          "owner": "Cameron Diaz"
+        },
+        {
+          "id": "bid-risk-analysis-008",
+          "state": "queued",
+          "projectReference": "CONSTRUCTI-0008",
+          "riskCategory": "Schedule",
+          "finding": "Temporary power responsibility is not assigned in the bid documents. — Service Window — Service Window",
+          "severity": "Critical",
+          "owner": "Drew Wilson"
+        },
+        {
+          "id": "bid-risk-analysis-009",
+          "state": "queued",
+          "projectReference": "CONSTRUCTI-0009",
+          "riskCategory": "Constructability",
+          "finding": "Temporary power responsibility is not assigned in the bid documents. — Quality Sample — Quality Sample",
+          "severity": "Low",
+          "owner": "Emerson Clark"
+        },
+        {
+          "id": "bid-risk-analysis-010",
+          "state": "queued",
+          "projectReference": "CONSTRUCTI-0010",
+          "riskCategory": "Site condition",
+          "finding": "Temporary power responsibility is not assigned in the bid documents. — Management Review — Management Review",
+          "severity": "Medium",
+          "owner": "Hayden Kim"
+        },
+        {
+          "id": "bid-risk-analysis-011",
+          "state": "queued",
+          "projectReference": "CONSTRUCTI-0011",
+          "riskCategory": "Scope gap",
+          "finding": "Temporary power responsibility is not assigned in the bid documents. — Exception Follow-up — Exception Follow-up",
+          "severity": "High",
+          "owner": "Jamie Rivera"
+        },
+        {
+          "id": "bid-risk-analysis-012",
+          "state": "queued",
+          "projectReference": "CONSTRUCTI-0012",
+          "riskCategory": "Contract term",
+          "finding": "Temporary power responsibility is not assigned in the bid documents. — Evidence Package — Evidence Package",
+          "severity": "Critical",
+          "owner": "Kai Thompson"
+        },
+        {
+          "id": "bid-risk-analysis-013",
+          "state": "queued",
+          "projectReference": "CONSTRUCTI-0013",
+          "riskCategory": "Schedule",
+          "finding": "Temporary power responsibility is not assigned in the bid documents. — Planning Cycle — Planning Cycle",
+          "severity": "Low",
+          "owner": "Logan Shah"
+        },
+        {
+          "id": "bid-risk-analysis-014",
+          "state": "queued",
+          "projectReference": "CONSTRUCTI-0014",
+          "riskCategory": "Constructability",
+          "finding": "Temporary power responsibility is not assigned in the bid documents. — Performance Review — Performance Review",
+          "severity": "Medium",
+          "owner": "Parker Evans"
+        },
+        {
+          "id": "bid-risk-analysis-015",
+          "state": "queued",
+          "projectReference": "CONSTRUCTI-0015",
+          "riskCategory": "Site condition",
+          "finding": "Temporary power responsibility is not assigned in the bid documents. — Final Verification — Final Verification",
+          "severity": "High",
+          "owner": "Quinn Murphy"
         }
       ]
     },
@@ -368,13 +620,139 @@
       ],
       "seeds": [
         {
-          "id": "cost-estimate-review-demo",
+          "id": "cost-estimate-review-001",
           "state": "prepared",
-          "estimateReference": "EST-DEMO-101-A",
-          "baselineCost": 12850000,
-          "reviewedCost": 13240000,
-          "varianceReason": "Structural steel escalation and revised crane duration.",
+          "estimateReference": "CONSTRUCTI-0001",
+          "baselineCost": 12850000.0,
+          "reviewedCost": 13240000.0,
+          "varianceReason": "Structural steel escalation and revised crane duration. — North Region — North Region",
           "contingencyPercent": 7.5
+        },
+        {
+          "id": "cost-estimate-review-002",
+          "state": "prepared",
+          "estimateReference": "CONSTRUCTI-0002",
+          "baselineCost": 12850002.0,
+          "reviewedCost": 13240002.0,
+          "varianceReason": "Structural steel escalation and revised crane duration. — Enterprise Account — Enterprise Account",
+          "contingencyPercent": 9.5
+        },
+        {
+          "id": "cost-estimate-review-003",
+          "state": "prepared",
+          "estimateReference": "CONSTRUCTI-0003",
+          "baselineCost": 12850004.0,
+          "reviewedCost": 13240004.0,
+          "varianceReason": "Structural steel escalation and revised crane duration. — Quarterly Cycle — Quarterly Cycle",
+          "contingencyPercent": 11.5
+        },
+        {
+          "id": "cost-estimate-review-004",
+          "state": "prepared",
+          "estimateReference": "CONSTRUCTI-0004",
+          "baselineCost": 12850006.0,
+          "reviewedCost": 13240006.0,
+          "varianceReason": "Structural steel escalation and revised crane duration. — Priority Queue — Priority Queue",
+          "contingencyPercent": 13.5
+        },
+        {
+          "id": "cost-estimate-review-005",
+          "state": "prepared",
+          "estimateReference": "CONSTRUCTI-0005",
+          "baselineCost": 12850008.0,
+          "reviewedCost": 13240008.0,
+          "varianceReason": "Structural steel escalation and revised crane duration. — Operations Review — Operations Review",
+          "contingencyPercent": 15.5
+        },
+        {
+          "id": "cost-estimate-review-006",
+          "state": "prepared",
+          "estimateReference": "CONSTRUCTI-0006",
+          "baselineCost": 12850010.0,
+          "reviewedCost": 13240010.0,
+          "varianceReason": "Structural steel escalation and revised crane duration. — Customer Request — Customer Request",
+          "contingencyPercent": 17.5
+        },
+        {
+          "id": "cost-estimate-review-007",
+          "state": "prepared",
+          "estimateReference": "CONSTRUCTI-0007",
+          "baselineCost": 12850012.0,
+          "reviewedCost": 13240012.0,
+          "varianceReason": "Structural steel escalation and revised crane duration. — Compliance Check — Compliance Check",
+          "contingencyPercent": 19.5
+        },
+        {
+          "id": "cost-estimate-review-008",
+          "state": "prepared",
+          "estimateReference": "CONSTRUCTI-0008",
+          "baselineCost": 12850014.0,
+          "reviewedCost": 13240014.0,
+          "varianceReason": "Structural steel escalation and revised crane duration. — Service Window — Service Window",
+          "contingencyPercent": 21.5
+        },
+        {
+          "id": "cost-estimate-review-009",
+          "state": "prepared",
+          "estimateReference": "CONSTRUCTI-0009",
+          "baselineCost": 12850016.0,
+          "reviewedCost": 13240016.0,
+          "varianceReason": "Structural steel escalation and revised crane duration. — Quality Sample — Quality Sample",
+          "contingencyPercent": 23.5
+        },
+        {
+          "id": "cost-estimate-review-010",
+          "state": "prepared",
+          "estimateReference": "CONSTRUCTI-0010",
+          "baselineCost": 12850018.0,
+          "reviewedCost": 13240018.0,
+          "varianceReason": "Structural steel escalation and revised crane duration. — Management Review — Management Review",
+          "contingencyPercent": 25.5
+        },
+        {
+          "id": "cost-estimate-review-011",
+          "state": "prepared",
+          "estimateReference": "CONSTRUCTI-0011",
+          "baselineCost": 12850020.0,
+          "reviewedCost": 13240020.0,
+          "varianceReason": "Structural steel escalation and revised crane duration. — Exception Follow-up — Exception Follow-up",
+          "contingencyPercent": 27.5
+        },
+        {
+          "id": "cost-estimate-review-012",
+          "state": "prepared",
+          "estimateReference": "CONSTRUCTI-0012",
+          "baselineCost": 12850022.0,
+          "reviewedCost": 13240022.0,
+          "varianceReason": "Structural steel escalation and revised crane duration. — Evidence Package — Evidence Package",
+          "contingencyPercent": 29.5
+        },
+        {
+          "id": "cost-estimate-review-013",
+          "state": "prepared",
+          "estimateReference": "CONSTRUCTI-0013",
+          "baselineCost": 12850024.0,
+          "reviewedCost": 13240024.0,
+          "varianceReason": "Structural steel escalation and revised crane duration. — Planning Cycle — Planning Cycle",
+          "contingencyPercent": 31.5
+        },
+        {
+          "id": "cost-estimate-review-014",
+          "state": "prepared",
+          "estimateReference": "CONSTRUCTI-0014",
+          "baselineCost": 12850026.0,
+          "reviewedCost": 13240026.0,
+          "varianceReason": "Structural steel escalation and revised crane duration. — Performance Review — Performance Review",
+          "contingencyPercent": 33.5
+        },
+        {
+          "id": "cost-estimate-review-015",
+          "state": "prepared",
+          "estimateReference": "CONSTRUCTI-0015",
+          "baselineCost": 12850028.0,
+          "reviewedCost": 13240028.0,
+          "varianceReason": "Structural steel escalation and revised crane duration. — Final Verification — Final Verification",
+          "contingencyPercent": 35.5
         }
       ]
     },
@@ -466,13 +844,139 @@
       ],
       "seeds": [
         {
-          "id": "permit-checklist-demo",
+          "id": "permit-checklist-001",
           "state": "draft",
-          "projectReference": "PROJECT-DEMO-101",
-          "jurisdiction": "Demo City Building Department",
+          "projectReference": "CONSTRUCTI-0001",
+          "jurisdiction": "Demo City Building Department — North Region — North Region",
           "permitType": "Building",
-          "requiredEvidence": "Sealed drawings; energy statement; contractor registration",
+          "requiredEvidence": "Sealed drawings; energy statement; contractor registration — North Region — North Region",
           "agencyStatus": "Not configured"
+        },
+        {
+          "id": "permit-checklist-002",
+          "state": "draft",
+          "projectReference": "CONSTRUCTI-0002",
+          "jurisdiction": "Demo City Building Department — Enterprise Account — Enterprise Account",
+          "permitType": "Electrical",
+          "requiredEvidence": "Sealed drawings; energy statement; contractor registration — Enterprise Account — Enterprise Account",
+          "agencyStatus": "Needs credentials"
+        },
+        {
+          "id": "permit-checklist-003",
+          "state": "draft",
+          "projectReference": "CONSTRUCTI-0003",
+          "jurisdiction": "Demo City Building Department — Quarterly Cycle — Quarterly Cycle",
+          "permitType": "Mechanical",
+          "requiredEvidence": "Sealed drawings; energy statement; contractor registration — Quarterly Cycle — Quarterly Cycle",
+          "agencyStatus": "Test ready"
+        },
+        {
+          "id": "permit-checklist-004",
+          "state": "draft",
+          "projectReference": "CONSTRUCTI-0004",
+          "jurisdiction": "Demo City Building Department — Priority Queue — Priority Queue",
+          "permitType": "Plumbing",
+          "requiredEvidence": "Sealed drawings; energy statement; contractor registration — Priority Queue — Priority Queue",
+          "agencyStatus": "Blocked"
+        },
+        {
+          "id": "permit-checklist-005",
+          "state": "draft",
+          "projectReference": "CONSTRUCTI-0005",
+          "jurisdiction": "Demo City Building Department — Operations Review — Operations Review",
+          "permitType": "Environmental",
+          "requiredEvidence": "Sealed drawings; energy statement; contractor registration — Operations Review — Operations Review",
+          "agencyStatus": "Not configured"
+        },
+        {
+          "id": "permit-checklist-006",
+          "state": "draft",
+          "projectReference": "CONSTRUCTI-0006",
+          "jurisdiction": "Demo City Building Department — Customer Request — Customer Request",
+          "permitType": "Building",
+          "requiredEvidence": "Sealed drawings; energy statement; contractor registration — Customer Request — Customer Request",
+          "agencyStatus": "Needs credentials"
+        },
+        {
+          "id": "permit-checklist-007",
+          "state": "draft",
+          "projectReference": "CONSTRUCTI-0007",
+          "jurisdiction": "Demo City Building Department — Compliance Check — Compliance Check",
+          "permitType": "Electrical",
+          "requiredEvidence": "Sealed drawings; energy statement; contractor registration — Compliance Check — Compliance Check",
+          "agencyStatus": "Test ready"
+        },
+        {
+          "id": "permit-checklist-008",
+          "state": "draft",
+          "projectReference": "CONSTRUCTI-0008",
+          "jurisdiction": "Demo City Building Department — Service Window — Service Window",
+          "permitType": "Mechanical",
+          "requiredEvidence": "Sealed drawings; energy statement; contractor registration — Service Window — Service Window",
+          "agencyStatus": "Blocked"
+        },
+        {
+          "id": "permit-checklist-009",
+          "state": "draft",
+          "projectReference": "CONSTRUCTI-0009",
+          "jurisdiction": "Demo City Building Department — Quality Sample — Quality Sample",
+          "permitType": "Plumbing",
+          "requiredEvidence": "Sealed drawings; energy statement; contractor registration — Quality Sample — Quality Sample",
+          "agencyStatus": "Not configured"
+        },
+        {
+          "id": "permit-checklist-010",
+          "state": "draft",
+          "projectReference": "CONSTRUCTI-0010",
+          "jurisdiction": "Demo City Building Department — Management Review — Management Review",
+          "permitType": "Environmental",
+          "requiredEvidence": "Sealed drawings; energy statement; contractor registration — Management Review — Management Review",
+          "agencyStatus": "Needs credentials"
+        },
+        {
+          "id": "permit-checklist-011",
+          "state": "draft",
+          "projectReference": "CONSTRUCTI-0011",
+          "jurisdiction": "Demo City Building Department — Exception Follow-up — Exception Follow-up",
+          "permitType": "Building",
+          "requiredEvidence": "Sealed drawings; energy statement; contractor registration — Exception Follow-up — Exception Follow-up",
+          "agencyStatus": "Test ready"
+        },
+        {
+          "id": "permit-checklist-012",
+          "state": "draft",
+          "projectReference": "CONSTRUCTI-0012",
+          "jurisdiction": "Demo City Building Department — Evidence Package — Evidence Package",
+          "permitType": "Electrical",
+          "requiredEvidence": "Sealed drawings; energy statement; contractor registration — Evidence Package — Evidence Package",
+          "agencyStatus": "Blocked"
+        },
+        {
+          "id": "permit-checklist-013",
+          "state": "draft",
+          "projectReference": "CONSTRUCTI-0013",
+          "jurisdiction": "Demo City Building Department — Planning Cycle — Planning Cycle",
+          "permitType": "Mechanical",
+          "requiredEvidence": "Sealed drawings; energy statement; contractor registration — Planning Cycle — Planning Cycle",
+          "agencyStatus": "Not configured"
+        },
+        {
+          "id": "permit-checklist-014",
+          "state": "draft",
+          "projectReference": "CONSTRUCTI-0014",
+          "jurisdiction": "Demo City Building Department — Performance Review — Performance Review",
+          "permitType": "Plumbing",
+          "requiredEvidence": "Sealed drawings; energy statement; contractor registration — Performance Review — Performance Review",
+          "agencyStatus": "Needs credentials"
+        },
+        {
+          "id": "permit-checklist-015",
+          "state": "draft",
+          "projectReference": "CONSTRUCTI-0015",
+          "jurisdiction": "Demo City Building Department — Final Verification — Final Verification",
+          "permitType": "Environmental",
+          "requiredEvidence": "Sealed drawings; energy statement; contractor registration — Final Verification — Final Verification",
+          "agencyStatus": "Test ready"
         }
       ]
     },
@@ -551,13 +1055,139 @@
       ],
       "seeds": [
         {
-          "id": "safety-plan-generator-demo",
+          "id": "safety-plan-generator-001",
           "state": "draft",
-          "projectReference": "PROJECT-DEMO-101",
-          "workPhase": "Structural steel erection",
-          "hazards": "Falls; suspended loads; hot work; mobile equipment",
-          "controls": "Engineered fall protection; lift plans; exclusion zones; fire watch",
-          "safetyLead": "Demo Site Safety Lead"
+          "projectReference": "CONSTRUCTI-0001",
+          "workPhase": "Structural steel erection — North Region — North Region",
+          "hazards": "Falls; suspended loads; hot work; mobile equipment — North Region — North Region",
+          "controls": "Engineered fall protection; lift plans; exclusion zones; fire watch — North Region — North Region",
+          "safetyLead": "Demo Site Safety Lead — North Region — North Region"
+        },
+        {
+          "id": "safety-plan-generator-002",
+          "state": "draft",
+          "projectReference": "CONSTRUCTI-0002",
+          "workPhase": "Structural steel erection — Enterprise Account — Enterprise Account",
+          "hazards": "Falls; suspended loads; hot work; mobile equipment — Enterprise Account — Enterprise Account",
+          "controls": "Engineered fall protection; lift plans; exclusion zones; fire watch — Enterprise Account — Enterprise Account",
+          "safetyLead": "Demo Site Safety Lead — Enterprise Account — Enterprise Account"
+        },
+        {
+          "id": "safety-plan-generator-003",
+          "state": "draft",
+          "projectReference": "CONSTRUCTI-0003",
+          "workPhase": "Structural steel erection — Quarterly Cycle — Quarterly Cycle",
+          "hazards": "Falls; suspended loads; hot work; mobile equipment — Quarterly Cycle — Quarterly Cycle",
+          "controls": "Engineered fall protection; lift plans; exclusion zones; fire watch — Quarterly Cycle — Quarterly Cycle",
+          "safetyLead": "Demo Site Safety Lead — Quarterly Cycle — Quarterly Cycle"
+        },
+        {
+          "id": "safety-plan-generator-004",
+          "state": "draft",
+          "projectReference": "CONSTRUCTI-0004",
+          "workPhase": "Structural steel erection — Priority Queue — Priority Queue",
+          "hazards": "Falls; suspended loads; hot work; mobile equipment — Priority Queue — Priority Queue",
+          "controls": "Engineered fall protection; lift plans; exclusion zones; fire watch — Priority Queue — Priority Queue",
+          "safetyLead": "Demo Site Safety Lead — Priority Queue — Priority Queue"
+        },
+        {
+          "id": "safety-plan-generator-005",
+          "state": "draft",
+          "projectReference": "CONSTRUCTI-0005",
+          "workPhase": "Structural steel erection — Operations Review — Operations Review",
+          "hazards": "Falls; suspended loads; hot work; mobile equipment — Operations Review — Operations Review",
+          "controls": "Engineered fall protection; lift plans; exclusion zones; fire watch — Operations Review — Operations Review",
+          "safetyLead": "Demo Site Safety Lead — Operations Review — Operations Review"
+        },
+        {
+          "id": "safety-plan-generator-006",
+          "state": "draft",
+          "projectReference": "CONSTRUCTI-0006",
+          "workPhase": "Structural steel erection — Customer Request — Customer Request",
+          "hazards": "Falls; suspended loads; hot work; mobile equipment — Customer Request — Customer Request",
+          "controls": "Engineered fall protection; lift plans; exclusion zones; fire watch — Customer Request — Customer Request",
+          "safetyLead": "Demo Site Safety Lead — Customer Request — Customer Request"
+        },
+        {
+          "id": "safety-plan-generator-007",
+          "state": "draft",
+          "projectReference": "CONSTRUCTI-0007",
+          "workPhase": "Structural steel erection — Compliance Check — Compliance Check",
+          "hazards": "Falls; suspended loads; hot work; mobile equipment — Compliance Check — Compliance Check",
+          "controls": "Engineered fall protection; lift plans; exclusion zones; fire watch — Compliance Check — Compliance Check",
+          "safetyLead": "Demo Site Safety Lead — Compliance Check — Compliance Check"
+        },
+        {
+          "id": "safety-plan-generator-008",
+          "state": "draft",
+          "projectReference": "CONSTRUCTI-0008",
+          "workPhase": "Structural steel erection — Service Window — Service Window",
+          "hazards": "Falls; suspended loads; hot work; mobile equipment — Service Window — Service Window",
+          "controls": "Engineered fall protection; lift plans; exclusion zones; fire watch — Service Window — Service Window",
+          "safetyLead": "Demo Site Safety Lead — Service Window — Service Window"
+        },
+        {
+          "id": "safety-plan-generator-009",
+          "state": "draft",
+          "projectReference": "CONSTRUCTI-0009",
+          "workPhase": "Structural steel erection — Quality Sample — Quality Sample",
+          "hazards": "Falls; suspended loads; hot work; mobile equipment — Quality Sample — Quality Sample",
+          "controls": "Engineered fall protection; lift plans; exclusion zones; fire watch — Quality Sample — Quality Sample",
+          "safetyLead": "Demo Site Safety Lead — Quality Sample — Quality Sample"
+        },
+        {
+          "id": "safety-plan-generator-010",
+          "state": "draft",
+          "projectReference": "CONSTRUCTI-0010",
+          "workPhase": "Structural steel erection — Management Review — Management Review",
+          "hazards": "Falls; suspended loads; hot work; mobile equipment — Management Review — Management Review",
+          "controls": "Engineered fall protection; lift plans; exclusion zones; fire watch — Management Review — Management Review",
+          "safetyLead": "Demo Site Safety Lead — Management Review — Management Review"
+        },
+        {
+          "id": "safety-plan-generator-011",
+          "state": "draft",
+          "projectReference": "CONSTRUCTI-0011",
+          "workPhase": "Structural steel erection — Exception Follow-up — Exception Follow-up",
+          "hazards": "Falls; suspended loads; hot work; mobile equipment — Exception Follow-up — Exception Follow-up",
+          "controls": "Engineered fall protection; lift plans; exclusion zones; fire watch — Exception Follow-up — Exception Follow-up",
+          "safetyLead": "Demo Site Safety Lead — Exception Follow-up — Exception Follow-up"
+        },
+        {
+          "id": "safety-plan-generator-012",
+          "state": "draft",
+          "projectReference": "CONSTRUCTI-0012",
+          "workPhase": "Structural steel erection — Evidence Package — Evidence Package",
+          "hazards": "Falls; suspended loads; hot work; mobile equipment — Evidence Package — Evidence Package",
+          "controls": "Engineered fall protection; lift plans; exclusion zones; fire watch — Evidence Package — Evidence Package",
+          "safetyLead": "Demo Site Safety Lead — Evidence Package — Evidence Package"
+        },
+        {
+          "id": "safety-plan-generator-013",
+          "state": "draft",
+          "projectReference": "CONSTRUCTI-0013",
+          "workPhase": "Structural steel erection — Planning Cycle — Planning Cycle",
+          "hazards": "Falls; suspended loads; hot work; mobile equipment — Planning Cycle — Planning Cycle",
+          "controls": "Engineered fall protection; lift plans; exclusion zones; fire watch — Planning Cycle — Planning Cycle",
+          "safetyLead": "Demo Site Safety Lead — Planning Cycle — Planning Cycle"
+        },
+        {
+          "id": "safety-plan-generator-014",
+          "state": "draft",
+          "projectReference": "CONSTRUCTI-0014",
+          "workPhase": "Structural steel erection — Performance Review — Performance Review",
+          "hazards": "Falls; suspended loads; hot work; mobile equipment — Performance Review — Performance Review",
+          "controls": "Engineered fall protection; lift plans; exclusion zones; fire watch — Performance Review — Performance Review",
+          "safetyLead": "Demo Site Safety Lead — Performance Review — Performance Review"
+        },
+        {
+          "id": "safety-plan-generator-015",
+          "state": "draft",
+          "projectReference": "CONSTRUCTI-0015",
+          "workPhase": "Structural steel erection — Final Verification — Final Verification",
+          "hazards": "Falls; suspended loads; hot work; mobile equipment — Final Verification — Final Verification",
+          "controls": "Engineered fall protection; lift plans; exclusion zones; fire watch — Final Verification — Final Verification",
+          "safetyLead": "Demo Site Safety Lead — Final Verification — Final Verification"
         }
       ]
     },
@@ -636,13 +1266,139 @@
       ],
       "seeds": [
         {
-          "id": "subcontractor-comparison-demo",
+          "id": "subcontractor-comparison-001",
           "state": "invited",
-          "tradePackage": "Division 05 structural steel",
-          "subcontractor": "Demo Steel Partners",
-          "bidAmount": 2180000,
-          "safetyScore": 88,
-          "commercialExceptions": "Excludes winter conditions and weekend crane premiums."
+          "tradePackage": "Division 05 structural steel — North Region — North Region",
+          "subcontractor": "Demo Steel Partners — North Region — North Region",
+          "bidAmount": 2180000.0,
+          "safetyScore": 88.0,
+          "commercialExceptions": "Excludes winter conditions and weekend crane premiums. — North Region — North Region"
+        },
+        {
+          "id": "subcontractor-comparison-002",
+          "state": "invited",
+          "tradePackage": "Division 05 structural steel — Enterprise Account — Enterprise Account",
+          "subcontractor": "Demo Steel Partners — Enterprise Account — Enterprise Account",
+          "bidAmount": 2180002.0,
+          "safetyScore": 90.0,
+          "commercialExceptions": "Excludes winter conditions and weekend crane premiums. — Enterprise Account — Enterprise Account"
+        },
+        {
+          "id": "subcontractor-comparison-003",
+          "state": "invited",
+          "tradePackage": "Division 05 structural steel — Quarterly Cycle — Quarterly Cycle",
+          "subcontractor": "Demo Steel Partners — Quarterly Cycle — Quarterly Cycle",
+          "bidAmount": 2180004.0,
+          "safetyScore": 92.0,
+          "commercialExceptions": "Excludes winter conditions and weekend crane premiums. — Quarterly Cycle — Quarterly Cycle"
+        },
+        {
+          "id": "subcontractor-comparison-004",
+          "state": "invited",
+          "tradePackage": "Division 05 structural steel — Priority Queue — Priority Queue",
+          "subcontractor": "Demo Steel Partners — Priority Queue — Priority Queue",
+          "bidAmount": 2180006.0,
+          "safetyScore": 94.0,
+          "commercialExceptions": "Excludes winter conditions and weekend crane premiums. — Priority Queue — Priority Queue"
+        },
+        {
+          "id": "subcontractor-comparison-005",
+          "state": "invited",
+          "tradePackage": "Division 05 structural steel — Operations Review — Operations Review",
+          "subcontractor": "Demo Steel Partners — Operations Review — Operations Review",
+          "bidAmount": 2180008.0,
+          "safetyScore": 96.0,
+          "commercialExceptions": "Excludes winter conditions and weekend crane premiums. — Operations Review — Operations Review"
+        },
+        {
+          "id": "subcontractor-comparison-006",
+          "state": "invited",
+          "tradePackage": "Division 05 structural steel — Customer Request — Customer Request",
+          "subcontractor": "Demo Steel Partners — Customer Request — Customer Request",
+          "bidAmount": 2180010.0,
+          "safetyScore": 98.0,
+          "commercialExceptions": "Excludes winter conditions and weekend crane premiums. — Customer Request — Customer Request"
+        },
+        {
+          "id": "subcontractor-comparison-007",
+          "state": "invited",
+          "tradePackage": "Division 05 structural steel — Compliance Check — Compliance Check",
+          "subcontractor": "Demo Steel Partners — Compliance Check — Compliance Check",
+          "bidAmount": 2180012.0,
+          "safetyScore": 100.0,
+          "commercialExceptions": "Excludes winter conditions and weekend crane premiums. — Compliance Check — Compliance Check"
+        },
+        {
+          "id": "subcontractor-comparison-008",
+          "state": "invited",
+          "tradePackage": "Division 05 structural steel — Service Window — Service Window",
+          "subcontractor": "Demo Steel Partners — Service Window — Service Window",
+          "bidAmount": 2180014.0,
+          "safetyScore": 102.0,
+          "commercialExceptions": "Excludes winter conditions and weekend crane premiums. — Service Window — Service Window"
+        },
+        {
+          "id": "subcontractor-comparison-009",
+          "state": "invited",
+          "tradePackage": "Division 05 structural steel — Quality Sample — Quality Sample",
+          "subcontractor": "Demo Steel Partners — Quality Sample — Quality Sample",
+          "bidAmount": 2180016.0,
+          "safetyScore": 104.0,
+          "commercialExceptions": "Excludes winter conditions and weekend crane premiums. — Quality Sample — Quality Sample"
+        },
+        {
+          "id": "subcontractor-comparison-010",
+          "state": "invited",
+          "tradePackage": "Division 05 structural steel — Management Review — Management Review",
+          "subcontractor": "Demo Steel Partners — Management Review — Management Review",
+          "bidAmount": 2180018.0,
+          "safetyScore": 106.0,
+          "commercialExceptions": "Excludes winter conditions and weekend crane premiums. — Management Review — Management Review"
+        },
+        {
+          "id": "subcontractor-comparison-011",
+          "state": "invited",
+          "tradePackage": "Division 05 structural steel — Exception Follow-up — Exception Follow-up",
+          "subcontractor": "Demo Steel Partners — Exception Follow-up — Exception Follow-up",
+          "bidAmount": 2180020.0,
+          "safetyScore": 108.0,
+          "commercialExceptions": "Excludes winter conditions and weekend crane premiums. — Exception Follow-up — Exception Follow-up"
+        },
+        {
+          "id": "subcontractor-comparison-012",
+          "state": "invited",
+          "tradePackage": "Division 05 structural steel — Evidence Package — Evidence Package",
+          "subcontractor": "Demo Steel Partners — Evidence Package — Evidence Package",
+          "bidAmount": 2180022.0,
+          "safetyScore": 110.0,
+          "commercialExceptions": "Excludes winter conditions and weekend crane premiums. — Evidence Package — Evidence Package"
+        },
+        {
+          "id": "subcontractor-comparison-013",
+          "state": "invited",
+          "tradePackage": "Division 05 structural steel — Planning Cycle — Planning Cycle",
+          "subcontractor": "Demo Steel Partners — Planning Cycle — Planning Cycle",
+          "bidAmount": 2180024.0,
+          "safetyScore": 112.0,
+          "commercialExceptions": "Excludes winter conditions and weekend crane premiums. — Planning Cycle — Planning Cycle"
+        },
+        {
+          "id": "subcontractor-comparison-014",
+          "state": "invited",
+          "tradePackage": "Division 05 structural steel — Performance Review — Performance Review",
+          "subcontractor": "Demo Steel Partners — Performance Review — Performance Review",
+          "bidAmount": 2180026.0,
+          "safetyScore": 114.0,
+          "commercialExceptions": "Excludes winter conditions and weekend crane premiums. — Performance Review — Performance Review"
+        },
+        {
+          "id": "subcontractor-comparison-015",
+          "state": "invited",
+          "tradePackage": "Division 05 structural steel — Final Verification — Final Verification",
+          "subcontractor": "Demo Steel Partners — Final Verification — Final Verification",
+          "bidAmount": 2180028.0,
+          "safetyScore": 116.0,
+          "commercialExceptions": "Excludes winter conditions and weekend crane premiums. — Final Verification — Final Verification"
         }
       ]
     },
@@ -727,13 +1483,139 @@
       ],
       "seeds": [
         {
-          "id": "change-order-tracker-demo",
+          "id": "change-order-tracker-001",
           "state": "identified",
-          "changeReference": "CO-DEMO-014",
-          "scope": "Relocate two rooftop units due to revised structural framing.",
-          "costImpact": 74000,
-          "scheduleImpactDays": 4,
+          "changeReference": "CONSTRUCTI-0001",
+          "scope": "Relocate two rooftop units due to revised structural framing. — North Region — North Region",
+          "costImpact": 74000.0,
+          "scheduleImpactDays": 4.0,
           "externalStatus": "Not configured"
+        },
+        {
+          "id": "change-order-tracker-002",
+          "state": "identified",
+          "changeReference": "CONSTRUCTI-0002",
+          "scope": "Relocate two rooftop units due to revised structural framing. — Enterprise Account — Enterprise Account",
+          "costImpact": 74002.0,
+          "scheduleImpactDays": 6.0,
+          "externalStatus": "Needs credentials"
+        },
+        {
+          "id": "change-order-tracker-003",
+          "state": "identified",
+          "changeReference": "CONSTRUCTI-0003",
+          "scope": "Relocate two rooftop units due to revised structural framing. — Quarterly Cycle — Quarterly Cycle",
+          "costImpact": 74004.0,
+          "scheduleImpactDays": 8.0,
+          "externalStatus": "Test ready"
+        },
+        {
+          "id": "change-order-tracker-004",
+          "state": "identified",
+          "changeReference": "CONSTRUCTI-0004",
+          "scope": "Relocate two rooftop units due to revised structural framing. — Priority Queue — Priority Queue",
+          "costImpact": 74006.0,
+          "scheduleImpactDays": 10.0,
+          "externalStatus": "Blocked"
+        },
+        {
+          "id": "change-order-tracker-005",
+          "state": "identified",
+          "changeReference": "CONSTRUCTI-0005",
+          "scope": "Relocate two rooftop units due to revised structural framing. — Operations Review — Operations Review",
+          "costImpact": 74008.0,
+          "scheduleImpactDays": 12.0,
+          "externalStatus": "Not configured"
+        },
+        {
+          "id": "change-order-tracker-006",
+          "state": "identified",
+          "changeReference": "CONSTRUCTI-0006",
+          "scope": "Relocate two rooftop units due to revised structural framing. — Customer Request — Customer Request",
+          "costImpact": 74010.0,
+          "scheduleImpactDays": 14.0,
+          "externalStatus": "Needs credentials"
+        },
+        {
+          "id": "change-order-tracker-007",
+          "state": "identified",
+          "changeReference": "CONSTRUCTI-0007",
+          "scope": "Relocate two rooftop units due to revised structural framing. — Compliance Check — Compliance Check",
+          "costImpact": 74012.0,
+          "scheduleImpactDays": 16.0,
+          "externalStatus": "Test ready"
+        },
+        {
+          "id": "change-order-tracker-008",
+          "state": "identified",
+          "changeReference": "CONSTRUCTI-0008",
+          "scope": "Relocate two rooftop units due to revised structural framing. — Service Window — Service Window",
+          "costImpact": 74014.0,
+          "scheduleImpactDays": 18.0,
+          "externalStatus": "Blocked"
+        },
+        {
+          "id": "change-order-tracker-009",
+          "state": "identified",
+          "changeReference": "CONSTRUCTI-0009",
+          "scope": "Relocate two rooftop units due to revised structural framing. — Quality Sample — Quality Sample",
+          "costImpact": 74016.0,
+          "scheduleImpactDays": 20.0,
+          "externalStatus": "Not configured"
+        },
+        {
+          "id": "change-order-tracker-010",
+          "state": "identified",
+          "changeReference": "CONSTRUCTI-0010",
+          "scope": "Relocate two rooftop units due to revised structural framing. — Management Review — Management Review",
+          "costImpact": 74018.0,
+          "scheduleImpactDays": 22.0,
+          "externalStatus": "Needs credentials"
+        },
+        {
+          "id": "change-order-tracker-011",
+          "state": "identified",
+          "changeReference": "CONSTRUCTI-0011",
+          "scope": "Relocate two rooftop units due to revised structural framing. — Exception Follow-up — Exception Follow-up",
+          "costImpact": 74020.0,
+          "scheduleImpactDays": 24.0,
+          "externalStatus": "Test ready"
+        },
+        {
+          "id": "change-order-tracker-012",
+          "state": "identified",
+          "changeReference": "CONSTRUCTI-0012",
+          "scope": "Relocate two rooftop units due to revised structural framing. — Evidence Package — Evidence Package",
+          "costImpact": 74022.0,
+          "scheduleImpactDays": 26.0,
+          "externalStatus": "Blocked"
+        },
+        {
+          "id": "change-order-tracker-013",
+          "state": "identified",
+          "changeReference": "CONSTRUCTI-0013",
+          "scope": "Relocate two rooftop units due to revised structural framing. — Planning Cycle — Planning Cycle",
+          "costImpact": 74024.0,
+          "scheduleImpactDays": 28.0,
+          "externalStatus": "Not configured"
+        },
+        {
+          "id": "change-order-tracker-014",
+          "state": "identified",
+          "changeReference": "CONSTRUCTI-0014",
+          "scope": "Relocate two rooftop units due to revised structural framing. — Performance Review — Performance Review",
+          "costImpact": 74026.0,
+          "scheduleImpactDays": 30.0,
+          "externalStatus": "Needs credentials"
+        },
+        {
+          "id": "change-order-tracker-015",
+          "state": "identified",
+          "changeReference": "CONSTRUCTI-0015",
+          "scope": "Relocate two rooftop units due to revised structural framing. — Final Verification — Final Verification",
+          "costImpact": 74028.0,
+          "scheduleImpactDays": 32.0,
+          "externalStatus": "Test ready"
         }
       ]
     },
@@ -817,13 +1699,139 @@
       ],
       "seeds": [
         {
-          "id": "project-risk-dashboard-demo",
+          "id": "project-risk-dashboard-001",
           "state": "calculating",
-          "projectReference": "PROJECT-DEMO-101",
+          "projectReference": "CONSTRUCTI-0001",
           "reportingDate": "2026-07-13",
+          "overallRisk": "Green",
+          "bidReadinessPercent": 82.0,
+          "topRisk": "Unresolved temporary-power scope and structural steel escalation. — North Region — North Region"
+        },
+        {
+          "id": "project-risk-dashboard-002",
+          "state": "calculating",
+          "projectReference": "CONSTRUCTI-0002",
+          "reportingDate": "2026-07-15",
           "overallRisk": "Amber",
-          "bidReadinessPercent": 82,
-          "topRisk": "Unresolved temporary-power scope and structural steel escalation."
+          "bidReadinessPercent": 84.0,
+          "topRisk": "Unresolved temporary-power scope and structural steel escalation. — Enterprise Account — Enterprise Account"
+        },
+        {
+          "id": "project-risk-dashboard-003",
+          "state": "calculating",
+          "projectReference": "CONSTRUCTI-0003",
+          "reportingDate": "2026-07-17",
+          "overallRisk": "Red",
+          "bidReadinessPercent": 86.0,
+          "topRisk": "Unresolved temporary-power scope and structural steel escalation. — Quarterly Cycle — Quarterly Cycle"
+        },
+        {
+          "id": "project-risk-dashboard-004",
+          "state": "calculating",
+          "projectReference": "CONSTRUCTI-0004",
+          "reportingDate": "2026-07-19",
+          "overallRisk": "Green",
+          "bidReadinessPercent": 88.0,
+          "topRisk": "Unresolved temporary-power scope and structural steel escalation. — Priority Queue — Priority Queue"
+        },
+        {
+          "id": "project-risk-dashboard-005",
+          "state": "calculating",
+          "projectReference": "CONSTRUCTI-0005",
+          "reportingDate": "2026-07-21",
+          "overallRisk": "Amber",
+          "bidReadinessPercent": 90.0,
+          "topRisk": "Unresolved temporary-power scope and structural steel escalation. — Operations Review — Operations Review"
+        },
+        {
+          "id": "project-risk-dashboard-006",
+          "state": "calculating",
+          "projectReference": "CONSTRUCTI-0006",
+          "reportingDate": "2026-07-23",
+          "overallRisk": "Red",
+          "bidReadinessPercent": 92.0,
+          "topRisk": "Unresolved temporary-power scope and structural steel escalation. — Customer Request — Customer Request"
+        },
+        {
+          "id": "project-risk-dashboard-007",
+          "state": "calculating",
+          "projectReference": "CONSTRUCTI-0007",
+          "reportingDate": "2026-07-25",
+          "overallRisk": "Green",
+          "bidReadinessPercent": 94.0,
+          "topRisk": "Unresolved temporary-power scope and structural steel escalation. — Compliance Check — Compliance Check"
+        },
+        {
+          "id": "project-risk-dashboard-008",
+          "state": "calculating",
+          "projectReference": "CONSTRUCTI-0008",
+          "reportingDate": "2026-07-27",
+          "overallRisk": "Amber",
+          "bidReadinessPercent": 96.0,
+          "topRisk": "Unresolved temporary-power scope and structural steel escalation. — Service Window — Service Window"
+        },
+        {
+          "id": "project-risk-dashboard-009",
+          "state": "calculating",
+          "projectReference": "CONSTRUCTI-0009",
+          "reportingDate": "2026-07-29",
+          "overallRisk": "Red",
+          "bidReadinessPercent": 98.0,
+          "topRisk": "Unresolved temporary-power scope and structural steel escalation. — Quality Sample — Quality Sample"
+        },
+        {
+          "id": "project-risk-dashboard-010",
+          "state": "calculating",
+          "projectReference": "CONSTRUCTI-0010",
+          "reportingDate": "2026-07-31",
+          "overallRisk": "Green",
+          "bidReadinessPercent": 100.0,
+          "topRisk": "Unresolved temporary-power scope and structural steel escalation. — Management Review — Management Review"
+        },
+        {
+          "id": "project-risk-dashboard-011",
+          "state": "calculating",
+          "projectReference": "CONSTRUCTI-0011",
+          "reportingDate": "2026-08-02",
+          "overallRisk": "Amber",
+          "bidReadinessPercent": 102.0,
+          "topRisk": "Unresolved temporary-power scope and structural steel escalation. — Exception Follow-up — Exception Follow-up"
+        },
+        {
+          "id": "project-risk-dashboard-012",
+          "state": "calculating",
+          "projectReference": "CONSTRUCTI-0012",
+          "reportingDate": "2026-08-04",
+          "overallRisk": "Red",
+          "bidReadinessPercent": 104.0,
+          "topRisk": "Unresolved temporary-power scope and structural steel escalation. — Evidence Package — Evidence Package"
+        },
+        {
+          "id": "project-risk-dashboard-013",
+          "state": "calculating",
+          "projectReference": "CONSTRUCTI-0013",
+          "reportingDate": "2026-08-06",
+          "overallRisk": "Green",
+          "bidReadinessPercent": 106.0,
+          "topRisk": "Unresolved temporary-power scope and structural steel escalation. — Planning Cycle — Planning Cycle"
+        },
+        {
+          "id": "project-risk-dashboard-014",
+          "state": "calculating",
+          "projectReference": "CONSTRUCTI-0014",
+          "reportingDate": "2026-08-08",
+          "overallRisk": "Amber",
+          "bidReadinessPercent": 108.0,
+          "topRisk": "Unresolved temporary-power scope and structural steel escalation. — Performance Review — Performance Review"
+        },
+        {
+          "id": "project-risk-dashboard-015",
+          "state": "calculating",
+          "projectReference": "CONSTRUCTI-0015",
+          "reportingDate": "2026-08-10",
+          "overallRisk": "Red",
+          "bidReadinessPercent": 110.0,
+          "topRisk": "Unresolved temporary-power scope and structural steel escalation. — Final Verification — Final Verification"
         }
       ]
     }
