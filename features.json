@@ -213,10 +213,12 @@
     "canonicalKey": "ai analyze",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
-      "/ai-analyze"
+      "/ai-analyze",
+      "/change-orders-full"
     ],
     "sourceProjects": [
       "AIConstructionManager"
@@ -225,6 +227,13 @@
       "construction-built-environment/construction-manager"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIConstructionManager",
+        "path": "frontend/src/pages/ChangeOrders.jsx:1",
+        "route": "/change-orders-full",
+        "originApp": "construction-built-environment/construction-manager"
+      },
       {
         "kind": "api",
         "sourceProject": "AIConstructionManager",
@@ -284,6 +293,32 @@
         "sourceProject": "AIConstructionManager",
         "path": "backend/routes/riskAssessment.js:7",
         "route": "/ai-assess",
+        "originApp": "construction-built-environment/construction-manager"
+      }
+    ]
+  },
+  {
+    "name": "AI Cost Estimate",
+    "canonicalKey": "ai cost estimate",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/ai"
+    ],
+    "sourceProjects": [
+      "AIConstructionManager"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/construction-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIConstructionManager",
+        "path": "frontend/src/App.js:47",
+        "route": "/ai/ai",
         "originApp": "construction-built-environment/construction-manager"
       }
     ]
@@ -397,10 +432,12 @@
     "canonicalKey": "ai generate",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
-      "/ai-generate"
+      "/ai-generate",
+      "/daily-reports-full"
     ],
     "sourceProjects": [
       "AIConstructionManager"
@@ -409,6 +446,13 @@
       "construction-built-environment/construction-manager"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIConstructionManager",
+        "path": "frontend/src/pages/DailyReports.jsx:1",
+        "route": "/daily-reports-full",
+        "originApp": "construction-built-environment/construction-manager"
+      },
       {
         "kind": "api",
         "sourceProject": "AIConstructionManager",
@@ -476,6 +520,32 @@
         "sourceProject": "AIConstructionManager",
         "path": "backend/routes/schedules.js:144",
         "route": "/ai-optimize",
+        "originApp": "construction-built-environment/construction-manager"
+      }
+    ]
+  },
+  {
+    "name": "AI Schedule Optimizer",
+    "canonicalKey": "ai optimizer schedule",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/ai?source=ai"
+    ],
+    "sourceProjects": [
+      "AIConstructionManager"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/construction-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIConstructionManager",
+        "path": "frontend/src/App.js:51",
+        "route": "/ai/ai?source=ai",
         "originApp": "construction-built-environment/construction-manager"
       }
     ]
@@ -609,6 +679,156 @@
     ]
   },
   {
+    "name": "Analyze",
+    "canonicalKey": "analyze",
+    "aliases": [],
+    "kinds": [
+      "ai-page",
+      "api"
+    ],
+    "routes": [
+      "/:id/analyze",
+      "/ai/analyze",
+      "/analyze",
+      "/budget?tool=analyze"
+    ],
+    "sourceProjects": [
+      "AIHomeRenovationProjectManager",
+      "AISmartBuildingManager"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/construction-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "client/src/pages/Budget.js:1",
+        "route": "/budget?tool=analyze",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "server/routes/budget.js:140",
+        "route": "/ai/analyze",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "server/routes/projects.js:82",
+        "route": "/ai/analyze",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "server/routes/visionProgressTracker.js:15",
+        "route": "/analyze",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AISmartBuildingManager",
+        "path": "backend/routes/climate.js:65",
+        "route": "/:id/analyze",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AISmartBuildingManager",
+        "path": "backend/routes/comfort.js:65",
+        "route": "/:id/analyze",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AISmartBuildingManager",
+        "path": "backend/routes/elevators.js:77",
+        "route": "/:id/analyze",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AISmartBuildingManager",
+        "path": "backend/routes/energy.js:73",
+        "route": "/:id/analyze",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AISmartBuildingManager",
+        "path": "backend/routes/fire.js:77",
+        "route": "/:id/analyze",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AISmartBuildingManager",
+        "path": "backend/routes/hvac.js:86",
+        "route": "/:id/analyze",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AISmartBuildingManager",
+        "path": "backend/routes/lighting.js:65",
+        "route": "/:id/analyze",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AISmartBuildingManager",
+        "path": "backend/routes/maintenance.js:66",
+        "route": "/:id/analyze",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AISmartBuildingManager",
+        "path": "backend/routes/parking.js:77",
+        "route": "/:id/analyze",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AISmartBuildingManager",
+        "path": "backend/routes/security.js:65",
+        "route": "/:id/analyze",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AISmartBuildingManager",
+        "path": "backend/routes/space.js:65",
+        "route": "/:id/analyze",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AISmartBuildingManager",
+        "path": "backend/routes/visitors.js:77",
+        "route": "/:id/analyze",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AISmartBuildingManager",
+        "path": "backend/routes/waste.js:77",
+        "route": "/:id/analyze",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AISmartBuildingManager",
+        "path": "backend/routes/water.js:77",
+        "route": "/:id/analyze",
+        "originApp": "construction-built-environment/construction-manager"
+      }
+    ]
+  },
+  {
     "name": "Analyze Bid",
     "canonicalKey": "analyze bid",
     "aliases": [],
@@ -639,9 +859,11 @@
     "canonicalKey": "analyze photo progress",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-center?tool=analyze-progress-photo",
       "/analyze-progress-photo"
     ],
     "sourceProjects": [
@@ -651,6 +873,13 @@
       "construction-built-environment/construction-manager"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIConstructionManager",
+        "path": "frontend/src/pages/AICenter.js:151",
+        "route": "/ai-center?tool=analyze-progress-photo",
+        "originApp": "construction-built-environment/construction-manager"
+      },
       {
         "kind": "api",
         "sourceProject": "AIConstructionManager",
@@ -2674,6 +2903,32 @@
     ]
   },
   {
+    "name": "Communication Log",
+    "canonicalKey": "communication log",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/communications"
+    ],
+    "sourceProjects": [
+      "AIHomeRenovationProjectManager"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/construction-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "client/src/pages/Communications.js:1",
+        "route": "/communications",
+        "originApp": "construction-built-environment/construction-manager"
+      }
+    ]
+  },
+  {
     "name": "Communications",
     "canonicalKey": "communication",
     "aliases": [],
@@ -3495,16 +3750,14 @@
   {
     "name": "Documents",
     "canonicalKey": "document",
-    "aliases": [
-      "Documents Page"
-    ],
+    "aliases": [],
     "kinds": [
+      "ai-page",
       "navigation",
       "page"
     ],
     "routes": [
       "/Documents",
-      "/DocumentsPage",
       "/documents"
     ],
     "sourceProjects": [
@@ -3544,6 +3797,13 @@
         "originApp": "construction-built-environment/construction-manager"
       },
       {
+        "kind": "ai-page",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "client/src/pages/Documents.js:1",
+        "route": "/documents",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
         "kind": "page",
         "sourceProject": "AIHomeRenovationProjectManager",
         "path": "client/src/App.js:91",
@@ -3570,13 +3830,6 @@
         "path": "client/src/pages/Documents.js",
         "route": "/Documents",
         "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/pages/DocumentsPage.js",
-        "route": "/DocumentsPage",
-        "originApp": "construction-built-environment/construction-manager"
       }
     ]
   },
@@ -3600,6 +3853,32 @@
         "sourceProject": "AIConstructionBidAnalyzer",
         "path": "client/src/components/Sidebar.js:26",
         "route": "",
+        "originApp": "construction-built-environment/construction-manager"
+      }
+    ]
+  },
+  {
+    "name": "Documents Page",
+    "canonicalKey": "document",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/DocumentsPage"
+    ],
+    "sourceProjects": [
+      "AIConstructionBidAnalyzer"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/construction-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIConstructionBidAnalyzer",
+        "path": "client/src/pages/DocumentsPage.js",
+        "route": "/DocumentsPage",
         "originApp": "construction-built-environment/construction-manager"
       }
     ]
@@ -3950,9 +4229,11 @@
     "canonicalKey": "equipment utilization",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-center?tool=equipment-utilization",
       "/equipment-utilization"
     ],
     "sourceProjects": [
@@ -3962,6 +4243,13 @@
       "construction-built-environment/construction-manager"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIConstructionManager",
+        "path": "frontend/src/pages/AICenter.js:173",
+        "route": "/ai-center?tool=equipment-utilization",
+        "originApp": "construction-built-environment/construction-manager"
+      },
       {
         "kind": "api",
         "sourceProject": "AIConstructionManager",
@@ -5924,6 +6212,7 @@
     "canonicalKey": "inspection",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "page"
     ],
     "routes": [
@@ -5937,6 +6226,13 @@
       "construction-built-environment/construction-manager"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "client/src/pages/Inspections.js:1",
+        "route": "/inspections",
+        "originApp": "construction-built-environment/construction-manager"
+      },
       {
         "kind": "page",
         "sourceProject": "AIHomeRenovationProjectManager",
@@ -6448,10 +6744,12 @@
     "canonicalKey": "match",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
-      "/ai/match"
+      "/ai/match",
+      "/contractors?tool=match"
     ],
     "sourceProjects": [
       "AIHomeRenovationProjectManager"
@@ -6461,10 +6759,103 @@
     ],
     "evidence": [
       {
+        "kind": "ai-page",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "client/src/pages/Contractors.js:1",
+        "route": "/contractors?tool=match",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
         "kind": "api",
         "sourceProject": "AIHomeRenovationProjectManager",
         "path": "server/routes/contractors.js:141",
         "route": "/ai/match",
+        "originApp": "construction-built-environment/construction-manager"
+      }
+    ]
+  },
+  {
+    "name": "Materials",
+    "canonicalKey": "material",
+    "aliases": [],
+    "kinds": [
+      "ai-page",
+      "navigation",
+      "page"
+    ],
+    "routes": [
+      "/Materials",
+      "/materials"
+    ],
+    "sourceProjects": [
+      "AIConstructionBidAnalyzer",
+      "AIHomeRenovationProjectManager"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/construction-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIConstructionBidAnalyzer",
+        "path": "client/src/components/Sidebar.js:10",
+        "route": "",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIConstructionBidAnalyzer",
+        "path": "client/src/App.js:99",
+        "route": "/materials",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIConstructionBidAnalyzer",
+        "path": "client/src/components/Sidebar.js:10",
+        "route": "/materials",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIConstructionBidAnalyzer",
+        "path": "client/src/pages/Dashboard.js:9",
+        "route": "/materials",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "client/src/pages/Materials.js:1",
+        "route": "/materials",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "client/src/App.js:89",
+        "route": "/materials",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "client/src/components/Layout.js:13",
+        "route": "/materials",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "client/src/pages/Dashboard.js:63",
+        "route": "/materials",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "client/src/pages/Materials.js",
+        "route": "/Materials",
         "originApp": "construction-built-environment/construction-manager"
       }
     ]
@@ -7133,13 +7524,71 @@
     ]
   },
   {
+    "name": "Permits",
+    "canonicalKey": "permit",
+    "aliases": [],
+    "kinds": [
+      "ai-page",
+      "page"
+    ],
+    "routes": [
+      "/Permits",
+      "/permits"
+    ],
+    "sourceProjects": [
+      "AIHomeRenovationProjectManager"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/construction-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "client/src/pages/Permits.js:1",
+        "route": "/permits",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "client/src/App.js:84",
+        "route": "/permits",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "client/src/components/Layout.js:8",
+        "route": "/permits",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "client/src/pages/Dashboard.js:53",
+        "route": "/permits",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "client/src/pages/Permits.js",
+        "route": "/Permits",
+        "originApp": "construction-built-environment/construction-manager"
+      }
+    ]
+  },
+  {
     "name": "Permits Risk",
     "canonicalKey": "permit risk",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-center?tool=permits-risk",
       "/permits-risk"
     ],
     "sourceProjects": [
@@ -7149,6 +7598,13 @@
       "construction-built-environment/construction-manager"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIConstructionManager",
+        "path": "frontend/src/pages/AICenter.js:193",
+        "route": "/ai-center?tool=permits-risk",
+        "originApp": "construction-built-environment/construction-manager"
+      },
       {
         "kind": "api",
         "sourceProject": "AIConstructionManager",
@@ -7215,6 +7671,7 @@
     "canonicalKey": "photo",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "page"
     ],
     "routes": [
@@ -7228,6 +7685,13 @@
       "construction-built-environment/construction-manager"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "client/src/pages/Photos.js:1",
+        "route": "/photos",
+        "originApp": "construction-built-environment/construction-manager"
+      },
       {
         "kind": "page",
         "sourceProject": "AIHomeRenovationProjectManager",
@@ -7580,6 +8044,32 @@
     ]
   },
   {
+    "name": "Prioritize Punch List",
+    "canonicalKey": "prioritize punch",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai-center?tool=prioritize-punchlist"
+    ],
+    "sourceProjects": [
+      "AIConstructionManager"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/construction-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIConstructionManager",
+        "path": "frontend/src/pages/AICenter.js:131",
+        "route": "/ai-center?tool=prioritize-punchlist",
+        "originApp": "construction-built-environment/construction-manager"
+      }
+    ]
+  },
+  {
     "name": "Prioritize Punchlist",
     "canonicalKey": "prioritize punchlist",
     "aliases": [],
@@ -7774,6 +8264,100 @@
     ]
   },
   {
+    "name": "Projects",
+    "canonicalKey": "project",
+    "aliases": [],
+    "kinds": [
+      "ai-page",
+      "navigation",
+      "page"
+    ],
+    "routes": [
+      "/Projects",
+      "/projects"
+    ],
+    "sourceProjects": [
+      "AIConstructionBidAnalyzer",
+      "AIConstructionManager",
+      "AIHomeRenovationProjectManager"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/construction-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIConstructionBidAnalyzer",
+        "path": "client/src/components/Sidebar.js:7",
+        "route": "",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIConstructionBidAnalyzer",
+        "path": "client/src/App.js:96",
+        "route": "/projects",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIConstructionBidAnalyzer",
+        "path": "client/src/components/Sidebar.js:7",
+        "route": "/projects",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIConstructionBidAnalyzer",
+        "path": "client/src/pages/Dashboard.js:6",
+        "route": "/projects",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIConstructionManager",
+        "path": "frontend/src/pages/Projects.jsx",
+        "route": "/Projects",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "client/src/pages/Projects.js:1",
+        "route": "/projects",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "client/src/App.js:82",
+        "route": "/projects",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "client/src/components/Layout.js:6",
+        "route": "/projects",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "client/src/pages/Dashboard.js:49",
+        "route": "/projects",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "client/src/pages/Projects.js",
+        "route": "/Projects",
+        "originApp": "construction-built-environment/construction-manager"
+      }
+    ]
+  },
+  {
     "name": "Projects Full",
     "canonicalKey": "full project",
     "aliases": [],
@@ -7828,10 +8412,12 @@
     "canonicalKey": "punch",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "page"
     ],
     "routes": [
-      "/PunchList"
+      "/PunchList",
+      "/punchlist"
     ],
     "sourceProjects": [
       "AIHomeRenovationProjectManager"
@@ -7840,6 +8426,13 @@
       "construction-built-environment/construction-manager"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "client/src/pages/PunchList.js:1",
+        "route": "/punchlist",
+        "originApp": "construction-built-environment/construction-manager"
+      },
       {
         "kind": "page",
         "sourceProject": "AIHomeRenovationProjectManager",
@@ -8360,6 +8953,7 @@
     "canonicalKey": "room",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "page"
     ],
@@ -8375,6 +8969,13 @@
       "construction-built-environment/construction-manager"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "client/src/pages/Rooms.js:1",
+        "route": "/rooms",
+        "originApp": "construction-built-environment/construction-manager"
+      },
       {
         "kind": "api",
         "sourceProject": "AIHomeRenovationProjectManager",
@@ -9127,9 +9728,11 @@
     "canonicalKey": "review submittal",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-center?tool=submittals-review",
       "/submittals-review"
     ],
     "sourceProjects": [
@@ -9139,6 +9742,13 @@
       "construction-built-environment/construction-manager"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIConstructionManager",
+        "path": "frontend/src/pages/AICenter.js:214",
+        "route": "/ai-center?tool=submittals-review",
+        "originApp": "construction-built-environment/construction-manager"
+      },
       {
         "kind": "api",
         "sourceProject": "AIConstructionManager",
@@ -9177,9 +9787,11 @@
     "canonicalKey": "meeting summarize",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-center?tool=summarize-meeting",
       "/summarize-meeting"
     ],
     "sourceProjects": [
@@ -9189,6 +9801,13 @@
       "construction-built-environment/construction-manager"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIConstructionManager",
+        "path": "frontend/src/pages/AICenter.js:111",
+        "route": "/ai-center?tool=summarize-meeting",
+        "originApp": "construction-built-environment/construction-manager"
+      },
       {
         "kind": "api",
         "sourceProject": "AIConstructionManager",
@@ -9692,10 +10311,12 @@
     "canonicalKey": "predict variance",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
-      "/ai/variance-predict"
+      "/ai/variance-predict",
+      "/budget?tool=variance-predict"
     ],
     "sourceProjects": [
       "AIHomeRenovationProjectManager"
@@ -9704,6 +10325,13 @@
       "construction-built-environment/construction-manager"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "client/src/pages/Budget.js:1",
+        "route": "/budget?tool=variance-predict",
+        "originApp": "construction-built-environment/construction-manager"
+      },
       {
         "kind": "api",
         "sourceProject": "AIHomeRenovationProjectManager",
@@ -9757,6 +10385,58 @@
         "sourceProject": "AIHomeRenovationProjectManager",
         "path": "client/src/pages/Vendors.js",
         "route": "/Vendors",
+        "originApp": "construction-built-environment/construction-manager"
+      }
+    ]
+  },
+  {
+    "name": "Vendors Suppliers",
+    "canonicalKey": "supplier vendor",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/vendors"
+    ],
+    "sourceProjects": [
+      "AIHomeRenovationProjectManager"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/construction-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "client/src/pages/Vendors.js:1",
+        "route": "/vendors",
+        "originApp": "construction-built-environment/construction-manager"
+      }
+    ]
+  },
+  {
+    "name": "Vet",
+    "canonicalKey": "vet",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/contractors?tool=vet"
+    ],
+    "sourceProjects": [
+      "AIHomeRenovationProjectManager"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/construction-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "client/src/pages/Contractors.js:1",
+        "route": "/contractors?tool=vet",
         "originApp": "construction-built-environment/construction-manager"
       }
     ]
@@ -9850,13 +10530,71 @@
     ]
   },
   {
+    "name": "Warranties",
+    "canonicalKey": "warranty",
+    "aliases": [],
+    "kinds": [
+      "ai-page",
+      "page"
+    ],
+    "routes": [
+      "/Warranties",
+      "/warranties"
+    ],
+    "sourceProjects": [
+      "AIHomeRenovationProjectManager"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/construction-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "client/src/pages/Warranties.js:1",
+        "route": "/warranties",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "client/src/App.js:96",
+        "route": "/warranties",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "client/src/components/Layout.js:20",
+        "route": "/warranties",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "client/src/pages/Dashboard.js:77",
+        "route": "/warranties",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "client/src/pages/Warranties.js",
+        "route": "/Warranties",
+        "originApp": "construction-built-environment/construction-manager"
+      }
+    ]
+  },
+  {
     "name": "Warranty Claim",
     "canonicalKey": "claim warranty",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-center?tool=warranty-claim",
       "/warranty-claim"
     ],
     "sourceProjects": [
@@ -9866,6 +10604,13 @@
       "construction-built-environment/construction-manager"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIConstructionManager",
+        "path": "frontend/src/pages/AICenter.js:234",
+        "route": "/ai-center?tool=warranty-claim",
+        "originApp": "construction-built-environment/construction-manager"
+      },
       {
         "kind": "api",
         "sourceProject": "AIConstructionManager",
