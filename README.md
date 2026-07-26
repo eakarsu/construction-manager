@@ -3,7 +3,7 @@
 Industry: **Construction & Built Environment**  
 Specialization: **Construction Manager**
 
-This standalone application consolidates source-backed capabilities into 283 optimized features, including 41 visible data-backed or AI-enabled views. Its public demo SQLite database contains 405 sanitized source rows across 27 imported tables and 120 operational workflow records.
+This standalone application consolidates source-backed capabilities into 283 optimized features, including all 283 source-backed feature views. Its public demo SQLite database contains 405 sanitized source rows across 27 imported tables and 120 operational workflow records.
 
 ## Run locally
 
